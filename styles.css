@@ -412,3 +412,7 @@ nav {
     color: #8b949e;
     margin-bottom: 0.3rem;
 }
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}

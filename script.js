@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "AI Agents Fundamentals",
             issuer: "Hugging Face",
             date: "2025",
-            link: "https://cdn-lfs-us-1.hf.co/repos/f2/34/f2344151f60f6027c436821dc61cf3f27a46435de57df8df50ad02b5acca7c07/989d779a38da66c709cb92d6319a9ba6e7188181241630a2de297d86d1a0e363?response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-02-21.png%3B+filename%3D%222025-02-21.png%22%3B&response-content-type=image%2Fpng&Expires=1740220987&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MDIyMDk4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zL2YyLzM0L2YyMzQ0MTUxZjYwZjYwMjdjNDM2ODIxZGM2MWNmM2YyN2E0NjQzNWRlNTdkZjhkZjUwYWQwMmI1YWNjYTdjMDcvOTg5ZDc3OWEzOGRhNjZjNzA5Y2I5MmQ2MzE5YTliYTZlNzE4ODE4MTI0MTYzMGEyZGUyOTdkODZkMWEwZTM2Mz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=LSoDG66GwAz7Kr89Hf7QW0PHzqnVrqh0Ifhf8AfQ3ciOz1J8B4S3PSwdBlavfql%7EEflvlWDEMr0PqHgmVKwdkh6u58g23fc27PiHhq3eft6zWdEXVhP9ebMzeD1hj%7EzXUm8D-k-C2nX1K0Gq%7EavE3IiRF1VqvnIjdO00YBpfFD8iBDG5ZULH1YjVzOcMx-9cJKmTNuVxQarIm1LEDu3PEEYDT9sRYPHKYbXLw1R2b0VB06XMc%7EjodWvKFKQdGMFrvyX6-suW2xYhU1-TYMvpZ20qJB7V7OQnwJaEFAjGBCcZROWbn6lrvqv9TmDhf%7EYJw%7EDpfp1fYWsX%7EMizLl5KkQ__&Key-Pair-Id=K24J24Z295AEI9"
+            link: "https://cdn-lfs-us-1.hf.co/repos/f2/34/f2344151f60f6027c436821dc61cf3f27a46435de57df8df50ad02b5acca7c07/989d779a38da66c709cb92d6319a9ba6e7188181241630a2de297d86d1a0e363?response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-02-21.png%3B+filename%3D%222025-02-21.png%22%3B&response-content-type=image%2Fpng&Expires=1742656580&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjY1NjU4MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zL2YyLzM0L2YyMzQ0MTUxZjYwZjYwMjdjNDM2ODIxZGM2MWNmM2YyN2E0NjQzNWRlNTdkZjhkZjUwYWQwMmI1YWNjYTdjMDcvOTg5ZDc3OWEzOGRhNjZjNzA5Y2I5MmQ2MzE5YTliYTZlNzE4ODE4MTI0MTYzMGEyZGUyOTdkODZkMWEwZTM2Mz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=Nan3eXaFesrm-1x2VLpGsQ6rxcha5vsnziGn6Yp7hG67xGis%7EEH2O7lNbA0PglT9wBU4pMqidoBbPR4142xmy0b07lptsYkTmJZ9yiueLEWQ8Gz136bk5mcIF7B0K6hgcZAtVwPW0lUnP5wE-9CjjG01QIj5PG%7EYkMcma%7EWdbe89c0CakzWNRjc1oUWSgK4ZH4Dx8zVo8-9GRJV9%7ELCiGsjTOczaUdJmSm1Z4ZOH7fjKVsiTg5jWr663dOANxR6W6r2SGWrhPw0ZMVZb73md-vaNVdwTBw9pE-tQPtr7DMzTX15GPHmUyCpxXHyI76t1DU-0%7E8U3RV%7EWkcI0dlzQmg__&Key-Pair-Id=K24J24Z295AEI9"
         },
         {
             title: "Advanced Learning Algorithms",
@@ -173,11 +173,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projects = [
         {
+            id: 'academic-chatbot',
             title: 'Academic Chatbot',
             description: 'Fine-tuned the Llama 3.1 8B model using the UnSloth framework with LoRA applied in 4-bit precision for efficient training. Leveraged the FastLanguageModel API with customized LoRA configurations, including targeted modules and gradient checkpointing, to optimize the model for processing a comprehensive school dataset. The dataset included course details, dormitory information, and working-student conditions. The objective was to assist international students by providing tailored information and resources to support their academic and personal needs.',
             tech: 'Python, LLM, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT'
         },
         {
+            id: 'handmotion-prediction',
             title: 'HandMotion Prediction',
             description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
             tech: 'Python, Data Analysis, PyTorch, Time-series'
@@ -205,12 +207,25 @@ document.addEventListener('DOMContentLoaded', () => {
     projects.forEach(project => {
         const div = document.createElement('div');
         div.className = 'project-card';
+        div.id = project.id;
         div.innerHTML = `
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="tech">${project.tech}</div>
         `;
         projectsGrid.appendChild(div);
+    });
+
+    // Check for anchor link on page load
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.substring(1); // Get #id from URL
+        if (hash) {
+            const project = document.getElementById(hash);
+            if (project) {
+                project.scrollIntoView({ behavior: 'smooth' });
+                project.style.backgroundColor = '#f8f9fa'; // Optional highlight
+            }
+        }
     });
 
     // Mobile Menu
