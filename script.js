@@ -19,15 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
             dates: "2024 - 2024",
             description: `
             <ul class="experience-list">
-                <li>Fine-tuned a Pre-trained Model: Optimized the performance of a pre-trained TrOCR (Transformer-based OCR model) for general recognition tasks involving text, numbers, and special characters, tailored specifically to the company's proprietary dataset.</li>
-                <li>Pre-trained and Fine-tuned a Custom OCR Model
+                <li>Constructed a comprehensive company dataset and ground truth labels to support OCR model fine-tuning.</li>
+                <li>Fine-Tuned a Pre-trained Model:
                     <ul class="sublist">
-                        <li>Developed a CNN-based ResNet-BiLSTM model for OCR applications targeting numeric recognition.</li>
-                        <li>Pre-trained the model on a synthetic and open-source dataset comprising approximately 19 million samples.</li>
-                        <li>Fine-tuned the model on the company's proprietary dataset with around 20,000 samples, ensuring improved accuracy and robustness.</li>
+                        <li>Optimized a pre-trained TrOCR (Transformer-based OCR model) for general text, numeric, and special character recognition tasks.</li>
+                        <li>Adapted the model specifically to the company's proprietary dataset for enhanced accuracy.</li>
+                    </ul>
+                </li>
+                <li>Pre-trained and Fine-Tuned a Custom OCR Model:
+                    <ul class="sublist">
+                        <li>Developed a CNN-based ResNet-BiLSTM architecture for numeric recognition tasks.</li>
+                        <li>Pre-trained the model using a synthetic and open-source dataset containing ~19 million samples.</li>
+                        <li>Fine-tuned the model on a proprietary dataset of ~20,000 samples to improve performance and robustness.</li>
                     </ul>
                 </li>
             </ul>
+
 
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
@@ -167,28 +174,73 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Content
     const skills = [
         'Python', 'TensorFlow', 'PyTorch', 
-        'NLP', 'Deep Learning', 'LLM', 'Linux',
-        'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection',
+        'NLP','Computer Vision' ,'Deep Learning', 'Deep Reinforcement Learning', 'LLM', 'Linux',
+        'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection', 'Object Classification',
+        'Web Development',
     ];
 
     const projects = [
         {
             id: 'academic-chatbot',
             title: 'Academic Chatbot',
-            description: 'Fine-tuned the Llama 3.1 8B model using the UnSloth framework with LoRA applied in 4-bit precision for efficient training. Leveraged the FastLanguageModel API with customized LoRA configurations, including targeted modules and gradient checkpointing, to optimize the model for processing a comprehensive school dataset. The dataset included course details, dormitory information, and working-student conditions. The objective was to assist international students by providing tailored information and resources to support their academic and personal needs.',
-            tech: 'Python, LLM, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT'
+            description: `
+                <ul class="">
+                    <li>Conducted a comparative study of two chatbot development approaches: fine-tuning and Retrieval-Augmented Generation (RAG).</li>
+                    <li>Fine-tuned the pre-trained Llama 3.1 8B language model using UnSloth and LoRA, specifically optimized to assist international students by leveraging a custom academic dataset.</li>
+                    <li>Developed and implemented a robust RAG system that combines the Llama 3.1 8B model with a hybrid retrieval mechanism using BM25 and a semantic encoder (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2).</li>
+                    <li>The dataset included comprehensive information such as:
+                        <ul class="sublist">
+                            <li>Housing and rental options for students.</li>
+                            <li>Study and work conditions for international learners.</li>
+                            <li>Detailed descriptions of courses, curricula, and academic requirements in the Department of Informatics and Artificial Intelligence.</li>
+                        </ul>
+                    </li>
+                </ul>
+            `,
+            tech: 'Python, LLM, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
         },
         {
             id: 'handmotion-prediction',
             title: 'HandMotion Prediction',
             description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
-            tech: 'Python, Data Analysis, PyTorch, Time-series'
+            tech: 'Python, Data Analysis, PyTorch, Time-series, Git'
         },
-        // {
-        //     title: 'Medical Image Analysis',
-        //     description: 'CNN for tumor detection in MRI scans',
-        //     tech: 'Python, Keras, DICOM'
-        // }
+        {
+            id: 'object-detection',
+            title: 'Application of the LoRA on Object Detection model',
+            description: `
+                <ul>
+                    <li>This research project was conducted in collaboration with a PhD student from Sorbonne University. The objective was to explore the application of LoRA (Low-Rank Adaptation) to enhance the performance of DiffusionDet, an object detection model, under few-shot learning conditions. The goal was to evaluate whether LoRA can effectively adapt the model to new object categories using limited annotated data, improving efficiency and generalization in low-resource scenarios.</li>
+                    <li>We applied this approach to aerial imagery datasets, specifically DOTA (Dataset for Object Detection in Aerial Images) and DIOR (Dataset for Object Recognition in Aerial Images). These datasets contain complex scenes with multiple object classes captured from aerial perspectives, making them ideal for evaluating few-shot object detection in real-world scenarios.
+                    </li>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, LoRA, Git'
+        },
+        {
+            id: 'object-classification',
+            title: 'Object classification',
+            description: `Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures. The objective was to evaluate the model's ability to distinguish between various animal species by learning visual features such as fur, skin, and body markings. The dataset includes high-resolution images of different animals categorized according to their external appearance, making it suitable for fine-grained image classification tasks. The training process involved preprocessing, data augmentation, and model optimization to improve accuracy and generalization on complex visual patterns.`,
+            tech: 'Python, PyTorch, Git'
+        },
+        {
+            id: 'e-commerce',
+            title: 'E-Commerce Web application',
+            description: `Developed a web application for sports shoe sales using a Vue.js frontend and a Laravel backend. The frontend, built with Vue.js, provided a dynamic and responsive user interface, enabling users to browse products, filter by size, brand, and category, and manage their shopping cart in real time. The backend, powered by Laravel, handled key functionalities such as user authentication, product management, inventory tracking, order processing, and payment integration. The system also included an admin dashboard for managing product listings, viewing sales analytics, and handling customer queries. The application aimed to deliver a seamless e-commerce experience optimized for both desktop and mobile users.`,
+            tech: 'Java script, PHP, Vue.js, Laravel, HTML, CSS, Tailwind, Git'
+        },
+        {
+            id: 'cafe-system',
+            title: 'Café System',
+            description: `Developed a Point of Sale (POS) management system for a café using Java and the Spring Boot backend framework. The system was designed to streamline daily operations by managing orders, inventory, tables, billing, and staff roles. Key features included real-time order tracking, digital receipts, menu management, and role-based access for cashiers and administrators. The backend was built with Spring Boot to ensure scalability, modularity, and efficient API handling. The application aimed to improve service speed, reduce human error, and provide insightful sales reports for business analysis.`,
+            tech: 'Java, Spring Boot, HTML, CSS, Tailwind, Java script ,Git'
+        },
+        {
+            id: 'air-writing',
+            title: 'Air Writing',
+            description: `Collected and prepared khmer dataset to train and fine-tune an existing machine learning model with the goal of improving its prediction accuracy. The process involved data cleaning, augmentation, and labeling to ensure high-quality input. The model was retrained using the updated dataset, followed by performance evaluation through metrics such as accuracy, precision, recall, and F1-score. This iterative process helped enhance the model’s generalization and reliability in real-world scenarios.`,
+            tech: 'Python, PyTorch ,Git'
+        },
     ];
 
     
