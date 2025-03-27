@@ -143,6 +143,10 @@ nav {
     gap: 2rem; /* Maintains spacing between items */
 }
 
+.projects-grid:active {
+    color:aquamarine;
+}
+
 .project-card {
     background: var(--secondary-color);
     border-radius: 10px;
@@ -412,7 +416,7 @@ nav {
     color: #8b949e;
     margin-bottom: 0.3rem;
 }
-.project-link {
+/* .project-link {
     text-decoration: none;
     color: inherit;
-}
+} */
