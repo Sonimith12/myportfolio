@@ -143,8 +143,8 @@ nav {
     gap: 2rem; /* Maintains spacing between items */
 }
 
-.projects-grid:active {
-    color:aquamarine;
+.projects-grid:hover {
+    color:rgb(0, 255, 68);
 }
 
 .project-card {
@@ -153,6 +153,7 @@ nav {
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
+    
 }
 
 .project-card::before {
