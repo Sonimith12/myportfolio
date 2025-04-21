@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
             company: "Cosywee",
             dates: "2024 - Present",
             description: `
-
+            <ul class="experience-list">
+                <li>Currently curating and expanding datasets to improve Optical Character Recognition (OCR) performance.</li>
+                <li>Actively managing and maintaining an OCR model in pre-production, implementing enhancements as needed.</li>
+                <li>Developing a Chatbot using Agentic RAG to provide dynamic product pricing based on size and additional items, along with general company information.</li>
+            </ul>
             `,
         },
         {
@@ -33,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li>Fine-tuned the model on a proprietary dataset of ~20,000 samples to improve performance and robustness.</li>
                     </ul>
                 </li>
+                <li>Developed an automation pipeline to connect to a mail server using Microsoft Graph API and locally download mailboxes containing quotations or purchase orders for OCR.</li>
             </ul>
 
 
@@ -173,7 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic Content
     const skills = [
-        'Python', 'TensorFlow', 'PyTorch', 
+        'Python', 'TensorFlow', 'PyTorch', 'FastAPI', 'Flask', 'JavaScript', 'PHP', 'MLops',
+        'Laravel', 'Streamlit', 'Shell Scripting', 'Vue.js', 'Spring Boot', 'HTML', 'CSS', 'Tailwind CSS', 'Docker', 'Google Cloud Platform',
         'NLP','Computer Vision' ,'Deep Learning', 'Deep Reinforcement Learning', 'LLM', 'Linux',
         'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection', 'Object Classification',
         'Web Development',
@@ -220,8 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'object-classification',
             title: 'Object classification',
-            description: `Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures. The objective was to evaluate the model's ability to distinguish between various animal species by learning visual features such as fur, skin, and body markings. The dataset includes high-resolution images of different animals categorized according to their external appearance, making it suitable for fine-grained image classification tasks. The training process involved preprocessing, data augmentation, and model optimization to improve accuracy and generalization on complex visual patterns.`,
-            tech: 'Python, PyTorch, Git'
+            description: `Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.`,
+            tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
         },
         {
             id: 'e-commerce',
