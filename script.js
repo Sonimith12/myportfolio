@@ -73,6 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add Certifications Data
     const certifications = [
         {
+            title: "LLM",
+            issuer: "Hugging Face",
+            date: "2025",
+            link: "https://cdn-uploads.huggingface.co/production/uploads/noauth/-GTEJYGh59ddI3OuhJ4O5.webp"
+        },
+        {
             title: "AI Agents Fundamentals",
             issuer: "Hugging Face",
             date: "2025",
@@ -203,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </li>
                 </ul>
             `,
-            tech: 'Python, LLM, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
+            tech: 'Python, LLM, RAG, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
         },
         {
             id: 'handmotion-prediction',
@@ -221,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, LoRA, Git'
+            tech: 'Python, PyTorch, Transformer, LoRA, Git'
         },
         {
             id: 'object-classification',
