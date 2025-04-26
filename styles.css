@@ -28,6 +28,10 @@ canvas#techBg {
     z-index: -1;
 }
 
+.tech {
+    color: #fb7d08;
+}
+
 nav {
     background: rgba(13, 17, 23, 0.8);
     backdrop-filter: blur(10px);
@@ -144,7 +148,7 @@ nav {
 }
 
 .projects-grid:hover {
-    color:rgb(0, 255, 68);
+    color:rgb(141, 211, 133);
 }
 
 .project-card {
