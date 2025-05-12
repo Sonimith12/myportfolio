@@ -212,6 +212,16 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: 'Python, LLM, RAG, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
         },
         {
+            id: 'asr',
+            title: 'Automatic Speech Recognition (ASR)',
+            description: `
+                <ul class="">
+                    <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset, specifically the American English subset, to enhance performance for speech-to-text applications.</li>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, Deep Learning, Fine Tuning, Transformers'
+        },
+        {
             id: 'handmotion-prediction',
             title: 'HandMotion Prediction',
             description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
