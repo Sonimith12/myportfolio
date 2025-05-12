@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Automatic Speech Recognition (ASR)',
             description: `
                 <ul class="">
-                    <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset, specifically the American English subset, to enhance performance for speech-to-text applications.</li>
+                    <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset to enhance performance for speech-to-text applications.</li>
                 </ul>
             `,
             tech: 'Python, PyTorch, Deep Learning, Fine Tuning, Transformers'
