@@ -73,6 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add Certifications Data
     const certifications = [
         {
+            title: "Fundamentals of MCP",
+            issuer: "Hugging Face",
+            date: "2024",
+            link: "https://shorturl.at/mhbyW"
+        },
+        {
             title: "LLM",
             issuer: "Hugging Face",
             date: "2025",
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "AI Agents Fundamentals",
             issuer: "Hugging Face",
             date: "2025",
-            link: "https://cdn-lfs-us-1.hf.co/repos/f2/34/f2344151f60f6027c436821dc61cf3f27a46435de57df8df50ad02b5acca7c07/989d779a38da66c709cb92d6319a9ba6e7188181241630a2de297d86d1a0e363?response-content-disposition=inline%3B+filename*%3DUTF-8%27%272025-02-21.png%3B+filename%3D%222025-02-21.png%22%3B&response-content-type=image%2Fpng&Expires=1742732019&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MjczMjAxOX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zL2YyLzM0L2YyMzQ0MTUxZjYwZjYwMjdjNDM2ODIxZGM2MWNmM2YyN2E0NjQzNWRlNTdkZjhkZjUwYWQwMmI1YWNjYTdjMDcvOTg5ZDc3OWEzOGRhNjZjNzA5Y2I5MmQ2MzE5YTliYTZlNzE4ODE4MTI0MTYzMGEyZGUyOTdkODZkMWEwZTM2Mz9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=rDun1BvPyPu2QajZkkZrPfXh%7E17HHF%7E6fkYLjxszIt4jZRJTlO5Wlji9pxcGaCiBJkyOw7E2Eabfgp-uaaRVPbTcxrQe0fNTgPEl6BmkMdNMzMrO19SrCGKLz-MW1xCHP9s1w9oQqokThFqlvHQ0T6lpBkw%7Eb6JX7BYyVE4KyNVwNOKof%7EuaHX3EgPcJHjGkExehncrpWujm-130lkHhekOW7d3lKW38dCKud%7Eh6-GoBe8vev9ASzi2yU2tNvf%7E13MrUbpyYlu5pbJycW5XUGCNOUJu%7E4d4p9JrEIJQMEA6YzKPyP%7E03VKymeOJX-DHJmZS3Li1Q0hrwXKhYUjt9wQ__&Key-Pair-Id=K24J24Z295AEI9"
+            link: "https://shorturl.at/kWEO5"
         },
         {
             title: "Advanced Learning Algorithms",
@@ -207,7 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li>Detailed descriptions of courses, curricula, and academic requirements in the Department of Informatics and Artificial Intelligence.</li>
                         </ul>
                     </li>
+                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
+                    Demo
+                    <source src="https://github.com/user-attachments/assets/3ba61ac0-f84b-45bf-babd-4988ba909a1e">
+                    </video>
                 </ul>
+
             `,
             tech: 'Python, LLM, RAG, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
         },
