@@ -82,19 +82,19 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "LLM",
             issuer: "Hugging Face",
             date: "2025",
-            link: "https://cdn-uploads.huggingface.co/production/uploads/noauth/-GTEJYGh59ddI3OuhJ4O5.webp"
+            link: "https://drive.google.com/file/d/1VKH7Enj34OHoI9K27NFKovIxacDqoxSj/view?usp=sharing"
         },
         {
             title: "AI Agents Fundamentals",
             issuer: "Hugging Face",
             date: "2025",
-            link: "https://shorturl.at/kWEO5"
+            link: "https://drive.google.com/file/d/1QndLNzEzg7N0CpUxgYWBhqXDPOdXOcQe/view?usp=sharing"
         },
         {
             title: "Advanced Learning Algorithms",
             issuer: "Coursera",
             date: "2024",
-            link: "https://www.coursera.org/account/accomplishments/verify/8ALUPZRDWUNY"
+            link: "https://drive.google.com/file/d/1czVQsVSKyvkJpmyNjsa0I2d861IjdvKk/view?usp=sharing"
         },
         {
             title: "ML: Regression and Classification",
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Content
     const skills = [
         'Python', 'TensorFlow', 'PyTorch', 'FastAPI', 'Flask', 'JavaScript', 'PHP', 'MLops',
-        'Laravel', 'Streamlit', 'Shell Scripting', 'Vue.js', 'Spring Boot', 'HTML', 'CSS', 'Tailwind CSS', 'Docker', 'Google Cloud Platform',
+        'Laravel', 'Streamlit', 'Shell Scripting', 'Vue.js', 'Spring Boot', 'HTML', 'CSS', 'Tailwind CSS', 'Docker', 'Google Cloud Platform', 'LangChain','LangGraph',
         'NLP','Computer Vision' ,'Deep Learning', 'Deep Reinforcement Learning', 'LLM', 'Linux',
         'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection', 'Object Classification',
         'Web Development',
@@ -223,6 +223,51 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: 'Python, LLM, RAG, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
         },
         {
+            id: 'object-detection',
+            title: 'Application of the LoRA on Object Detection model',
+            description: `
+                <ul>
+                    <li>This research project was conducted in collaboration with a PhD student from Sorbonne University. The objective was to explore the application of LoRA (Low-Rank Adaptation) to enhance the performance of DiffusionDet, an object detection model, under few-shot learning conditions. The goal was to evaluate whether LoRA can effectively adapt the model to new object categories using limited annotated data, improving efficiency and generalization in low-resource scenarios.</li>
+                    <li>We applied this approach to aerial imagery datasets, specifically DOTA (Dataset for Object Detection in Aerial Images) and DIOR (Dataset for Object Recognition in Aerial Images). These datasets contain complex scenes with multiple object classes captured from aerial perspectives, making them ideal for evaluating few-shot object detection in real-world scenarios.
+                    </li>
+                    <li>The paper can be found here: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+        },
+        {
+            id: 'ocr',
+            title: 'Handwritten Text Recognition with Fine-Tuned TrOCR',
+            description: `
+                <ul>
+                    <li>This project fine-tunes the microsoft/trocr-large-handwritten model from Hugging Face for handwritten text recognition on a custom dataset. The goal is to adapt the model to recognize specific handwritten text styles or domains with improved accuracy.
+                    </li>
+                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
+                    Demo
+                    <source src="https://github.com/user-attachments/assets/9c08b124-290e-45eb-88f7-775e8118e7c6">
+                    </video>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+        },
+        {
+            id: 'object-classification',
+            title: 'Object classification',
+            description: `<ul>
+                <li>
+                    Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.
+                </li>
+                
+                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
+                    Demo
+                    <source src="https://github.com/user-attachments/assets/ae1c0d9a-5c9c-4c3d-885f-fecacd865b87">
+                    </video>
+            </ul>`,
+            
+            
+            tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
+        },
+        {
             id: 'asr',
             title: 'Automatic Speech Recognition (ASR)',
             description: `
@@ -237,24 +282,6 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'HandMotion Prediction',
             description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
             tech: 'Python, Data Analysis, PyTorch, Time-series, Git'
-        },
-        {
-            id: 'object-detection',
-            title: 'Application of the LoRA on Object Detection model',
-            description: `
-                <ul>
-                    <li>This research project was conducted in collaboration with a PhD student from Sorbonne University. The objective was to explore the application of LoRA (Low-Rank Adaptation) to enhance the performance of DiffusionDet, an object detection model, under few-shot learning conditions. The goal was to evaluate whether LoRA can effectively adapt the model to new object categories using limited annotated data, improving efficiency and generalization in low-resource scenarios.</li>
-                    <li>We applied this approach to aerial imagery datasets, specifically DOTA (Dataset for Object Detection in Aerial Images) and DIOR (Dataset for Object Recognition in Aerial Images). These datasets contain complex scenes with multiple object classes captured from aerial perspectives, making them ideal for evaluating few-shot object detection in real-world scenarios.
-                    </li>
-                </ul>
-            `,
-            tech: 'Python, PyTorch, Transformer, LoRA, Git'
-        },
-        {
-            id: 'object-classification',
-            title: 'Object classification',
-            description: `Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.`,
-            tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
         },
         {
             id: 'e-commerce',
