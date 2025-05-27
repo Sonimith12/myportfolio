@@ -67,6 +67,19 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
+        },
+        {
+            title: "Research Assistant",
+            company: "ViLa Laboratory",
+            dates: "2022 - 2023",
+            description: `
+            <ul class="experience-list">
+                <li>Experiment by training the model with different hyperparameters and collecting a dataset to train the model.</li>
+                <li>Assist researchers in various tasks</li>
+                <li>Participate in the presentation of a poster on the research theme during the national scientific day.</li>
+            </ul>
+            `,
+            // description: "Pre-trained and Fine-tuned a Custom OCR Model"
         }
     ];
 
@@ -76,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Fundamentals of MCP",
             issuer: "Hugging Face",
             date: "2024",
-            link: "https://shorturl.at/mhbyW"
+            link: "https://drive.google.com/file/d/1czVQsVSKyvkJpmyNjsa0I2d861IjdvKk/view?usp=sharing"
         },
         {
             title: "LLM",
@@ -94,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Advanced Learning Algorithms",
             issuer: "Coursera",
             date: "2024",
-            link: "https://drive.google.com/file/d/1czVQsVSKyvkJpmyNjsa0I2d861IjdvKk/view?usp=sharing"
+            link: "https://www.coursera.org/account/accomplishments/verify/8ALUPZRDWUNY"
         },
         {
             title: "ML: Regression and Classification",
