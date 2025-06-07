@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul class="">
                     <li>Conducted a comparative study of two chatbot development approaches: fine-tuning and Retrieval-Augmented Generation (RAG).</li>
                     <li>Fine-tuned the pre-trained Llama 3.1 8B language model using UnSloth and LoRA, specifically optimized to assist international students by leveraging a custom academic dataset.</li>
-                    <li>Developed and implemented a robust RAG system that combines the Llama 3.1 8B model with a hybrid retrieval mechanism using BM25 and a semantic encoder (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2).</li>
+                    <li>Developed and implemented a robust RAG system that combines the Llama 3.1 8B model with a hybrid retrieval mechanism using BM25 and embedding model with reranker(BGE-M3 with BGE-Reranker).</li>
                     <li>The dataset included comprehensive information such as:
                         <ul class="sublist">
                             <li>Housing and rental options for students.</li>
