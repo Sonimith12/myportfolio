@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li>Built a MCP(model context protocol) server that allows users to upload documents and interact with an AI agent that can answer any question based on the uploaded content. Each response includes precise references (page and paragraph number) to the original document, ensuring transparency and easy verification.</li>
                     <video controls style="width: 100%; height: auto; margin-top: 10px;">
                     Demo
-                    <source src="https://github.com/user-attachments/assets/3084b79c-19ee-4a77-a996-b419a3fbbf5b">
+                    <source src="https://github.com/user-attachments/assets/e0ec88b9-85dd-42c6-b743-f89a8ef0e496">
                     </video>
                 </ul>
 
