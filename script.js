@@ -211,6 +211,21 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const projects = [
+         {
+            id: 'ducucite',
+            title: 'DocuCite-Agent',
+            description: `
+                <ul class="">
+                    <li>Built a MCP(model context protocol) server that allows users to upload documents and interact with an AI agent that can answer any question based on the uploaded content. Each response includes precise references (page and paragraph number) to the original document, ensuring transparency and easy verification.</li>
+                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
+                    Demo
+                    <source src="https://github.com/user-attachments/assets/e31d825d-1647-4444-a6ea-400d567c4cec">
+                    </video>
+                </ul>
+
+            `,
+            tech: 'Python, LLM, RAG, MCP, Deep Learning, Fine Tuning, LangChain, PERT, Git'
+        },
         {
             id: 'academic-chatbot',
             title: 'Academic Chatbot',
