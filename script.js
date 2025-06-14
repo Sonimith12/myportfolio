@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </li>
                     <video controls style="width: 100%; height: auto; margin-top: 10px;">
                     Demo
-                    <source src="https://github.com/user-attachments/assets/b2c41ba9-dd9d-4a66-83a1-43a4147fd966">
+                    <source src="https://github.com/user-attachments/assets/79a804bb-2560-42b8-9a41-bbdc8da0832b">
                     </video>
                 </ul>
 
