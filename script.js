@@ -203,17 +203,17 @@ document.addEventListener('DOMContentLoaded', () => {
         'MongDB',
     ];
     const knowledges = [
-        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs', 'Signal Processing', 'Yolo', 'Reinforcment Learning', 'Deep Reinforcement Learning',
+        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs', 'Signal Processing', 'Yolo', 'Deep Reinforcement Learning', 'Software Development'
     ]
 
     const projects = [
          {
             id: 'object-detection',
-            title: 'Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
+            title: 'Conference EUSIPCO 2025: Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
             description: `
                 <ul>
                     <li>The research addresses the challenge of cross-domain object detection in few-shot learning. Experiments were conducted using the state-of-the-art object detection model DiffusionDet by applying Parameter-Efficient Fine-Tuning (PEFT), specifically Low-Rank Adaptation (LoRA), to enable cross-domain object detection from everyday images in the COCO dataset to aerial images in the DOTA and DIOR datasets.</li>
-                    <li>Personal Contribution: Analyzed the DOTA and DIOR datasets to provide insights into their characteristics and distribution. Explored foundation models including Vision Transformer (ViT), Detection Transformer (DETR), and DiffusionDet, and proposed specific modules/layers for the injection of trainable parameters using LoRA. Monitored gradients during backpropagation throughout the training process to ensure the model was learning effectively, avoiding issues such as gradient explosion or vanishing.</li>
+                    <li>Personal Contribution: Analyzed the DOTA and DIOR datasets to provide insights into their characteristics and distribution. Explored foundation models including Vision Transformer (ViT), Detection Transformer (DETR), and DiffusionDet, and proposed specific modules/layers for the injection of trainable parameters using LoRA. Monitored gradients during backpropagation throughout the training process to ensure the model was learning properly, avoiding issues such as gradient explosion or vanishing.</li>
                     <li>Link to paper: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
                 </ul>
             `,
@@ -221,19 +221,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'real-time detection',
-            title: 'Détection Automatique des Traînées Astronomiques avec YOLO – Une Approche Exploratoire pour la Connaissance du Domaine Spatial',
+            title: 'Conference APIA 2025: Détection Automatique des Traînées Astronomiques avec YOLO – Une Approche Exploratoire pour la Connaissance du Domaine Spatial',
             description: `
                 <ul>
-                    <li>The research addresses the challenge of cross-domain object detection in few-shot learning. The research conducted the experiment on state of the art object detection DiffusionDet by applying PEFT, specifically Low-Rank Adaptation into transforming the images in daily life COCO dataset to aerial images known as DOTA/DIOR.</li>
-                    <li>Contribution: Analyzing the DOTA/DIOR dataset to provide insight of their caracteristics and distribution, exploring foudnation models: Vision Transformer (ViT), Detection Transformer (DETR), Diffusion Detection (DiffusionDet) and propose which modules/layers to inject trainable parameters via LoRA, observing the gradient during backpropagation in the learning process to have a general idea wether the model is learning properly.</li>
-                    <li>Link to paper: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
+                    <li>A YOLOv8 model was fine-tuned from daily image data (COCO) to telescope images collected in the Luxembourg region to detect streaks from satellites and space debris. The model was optimized for varying lighting and noise conditions. It reached 0.90 mAP@50-95 and processed at 91 fps, supporting real-time deployment on edge devices. Further optimization can be applied to manage the trade-off between speed and accuracy.</li>
+                    <li>Link to paper: <a href="https://pfia2025.u-bourgogne.fr/conferences/apia/Articles/D%C3%A9tection%20Automatique%20des%20Tra%C3%AEn%C3%A9es%20Astronomiques%20avec%20YOLO%20-%20Une%20Approche%20Exploratoire%20pour%20la%20Connaissance%20du%20Domaine%20Spatial.pdf">APIA 2025</a></li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+            tech: 'Python, OpenCV, Ultralytics (Yolo)'
         },
         {
             id: 'academic-chatbot',
-            title: 'Academic Chatbot',
+            title: 'Hackathon 1st place: Hackathon 1st Place: Patient Activity Prediction from Bracelet Acceleration Signals',
             description: `
                 <ul class="">
                     <li>Conducted a comparative study of two chatbot development approaches: fine-tuning and Retrieval-Augmented Generation (RAG).</li>
@@ -348,10 +347,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Populate knowledges
-    const knowledgesGrid = document.querySelector('.skills-grid');
+    const knowledgesGrid = document.querySelector('.knowledges-grid');
     knowledges.forEach(knowledge => {
         const div = document.createElement('div');
-        div.className = 'skills-grid';
+        div.className = 'knowledges-card';
         div.textContent = knowledge;
         knowledgesGrid.appendChild(div);
     });
@@ -431,3 +430,21 @@ education.forEach(edu => {
     `;
     educationTimeline.appendChild(div);
 });
+
+function setLanguage(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+
+    document.querySelectorAll(`.lang-${lang}`).forEach(el => el.style.display = '');
+
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active-lang'));
+    const activeBtn = document.getElementById(`lang-${lang}`);
+    if (activeBtn) activeBtn.classList.add('active-lang');
+
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
+});
+
