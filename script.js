@@ -200,28 +200,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const skills = [
         'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
         'Scikit-Learn', 'Pytest', 'GTest', 'Flash', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
-        'NoSQL: MongDB',
+        'MongDB',
     ];
     const knowledges = [
-        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs, vLLMs', 'Signal Processing', 'Yolo', 'Reinforcment Learning', 'Deep Reinforcement Learning',
+        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs', 'Signal Processing', 'Yolo', 'Reinforcment Learning', 'Deep Reinforcement Learning',
     ]
 
     const projects = [
          {
-            id: 'ducucite',
-            title: 'DocuCite-Agent',
+            id: 'object-detection',
+            title: 'Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
             description: `
-                <ul class="">
-                    <li>Built a MCP(model context protocol) server that allows users to upload documents and interact with an AI agent that can answer any question based on the uploaded content. Each response includes precise references (page and paragraph number) to the original document, ensuring transparency and easy verification.
-                    </li>
-                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
-                    Demo
-                    <source src="https://github.com/user-attachments/assets/79a804bb-2560-42b8-9a41-bbdc8da0832b">
-                    </video>
+                <ul>
+                    <li>The research addresses the challenge of cross-domain object detection in few-shot learning. Experiments were conducted using the state-of-the-art object detection model DiffusionDet by applying Parameter-Efficient Fine-Tuning (PEFT), specifically Low-Rank Adaptation (LoRA), to enable cross-domain object detection from everyday images in the COCO dataset to aerial images in the DOTA and DIOR datasets.</li>
+                    <li>Personal Contribution: Analyzed the DOTA and DIOR datasets to provide insights into their characteristics and distribution. Explored foundation models including Vision Transformer (ViT), Detection Transformer (DETR), and DiffusionDet, and proposed specific modules/layers for the injection of trainable parameters using LoRA. Monitored gradients during backpropagation throughout the training process to ensure the model was learning effectively, avoiding issues such as gradient explosion or vanishing.</li>
+                    <li>Link to paper: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
                 </ul>
-
             `,
-            tech: 'Python, LLM, RAG, MCP, Deep Learning, Fine Tuning, LangChain, PERT, Git'
+            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+        },
+        {
+            id: 'real-time detection',
+            title: 'Détection Automatique des Traînées Astronomiques avec YOLO – Une Approche Exploratoire pour la Connaissance du Domaine Spatial',
+            description: `
+                <ul>
+                    <li>The research addresses the challenge of cross-domain object detection in few-shot learning. The research conducted the experiment on state of the art object detection DiffusionDet by applying PEFT, specifically Low-Rank Adaptation into transforming the images in daily life COCO dataset to aerial images known as DOTA/DIOR.</li>
+                    <li>Contribution: Analyzing the DOTA/DIOR dataset to provide insight of their caracteristics and distribution, exploring foudnation models: Vision Transformer (ViT), Detection Transformer (DETR), Diffusion Detection (DiffusionDet) and propose which modules/layers to inject trainable parameters via LoRA, observing the gradient during backpropagation in the learning process to have a general idea wether the model is learning properly.</li>
+                    <li>Link to paper: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, Transformer, LoRA, Git'
         },
         {
             id: 'academic-chatbot',
@@ -340,10 +348,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Populate knowledges
-    const knowledgesGrid = document.querySelector('.knowledges-grid');
+    const knowledgesGrid = document.querySelector('.skills-grid');
     knowledges.forEach(knowledge => {
         const div = document.createElement('div');
-        div.className = 'knowledge-card';
+        div.className = 'skills-grid';
         div.textContent = knowledge;
         knowledgesGrid.appendChild(div);
     });
