@@ -340,11 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Populate knowledges
-    const knowledgesGrid = document.querySelector('.skills-grid');
-    knowledges.forEach(skill => {
+    const knowledgesGrid = document.querySelector('.knowledges-grid');
+    knowledges.forEach(knowledge => {
         const div = document.createElement('div');
-        div.className = 'skill-card';
-        div.textContent = skill;
+        div.className = 'knowledge-card';
+        div.textContent = knowledge;
         knowledgesGrid.appendChild(div);
     });
 
