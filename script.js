@@ -339,6 +339,15 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsGrid.appendChild(div);
     });
 
+    // Populate knowledges
+    const knowledgesGrid = document.querySelector('.skills-grid');
+    knowledges.forEach(skill => {
+        const div = document.createElement('div');
+        div.className = 'skill-card';
+        div.textContent = skill;
+        knowledgesGrid.appendChild(div);
+    });
+
     // Populate Projects
     const projectsGrid = document.querySelector('.projects-grid');
     projects.forEach(project => {
