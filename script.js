@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Previous background and setup code remains the same
 
     // Add Experience Data
-    const experience = [
+    const experiences = [
         {
             title: "Software Development Intern – Computer Vision",
             company: "Eviden - Atos",
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Populate Experience
     const experienceTimeline = document.querySelector('.experience-timeline');
-    experience.forEach(exp => {
+    experiences.forEach(exp => {
         const div = document.createElement('div');
         div.className = 'experience-item';
         div.innerHTML = `
