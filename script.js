@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <ul class="experience-list">
                 <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for character classification.</li>
                 <li>Integrated OpenCV-based gesture tracking to enable real-time air handwriting input.</li>
-                <li>Achieved a test accuracy of 89.06%, demonstrating effective recognition of Khmer characters in dynamic input conditions.</li>
+                <li>Technologies: Python, OpenCV, Pytorch</li>
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic Content
     const skills = [
-        'Python', 'TensorFlow', 'PyTorch', 'FastAPI', 'Flask', 'JavaScript', 'PHP', 'MLops',
+        'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'FastAPI', 'Flask', 'JavaScript', 'PHP', 'MLops',
         'Laravel', 'Streamlit', 'Shell Scripting', 'Vue.js', 'Spring Boot', 'HTML', 'CSS', 'Tailwind CSS', 'Docker', 'Google Cloud Platform', 'LangChain','LangGraph',
         'NLP','Computer Vision' ,'Deep Learning', 'Deep Reinforcement Learning', 'LLM', 'Linux',
         'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection', 'Object Classification',
