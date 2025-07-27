@@ -6,77 +6,72 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add Experience Data
     const experience = [
         {
-            title: "AI Engineer",
-            company: "Cosywee",
-            dates: "2024 - Present",
+            title: "Software Development Intern – Computer Vision",
+            company: "Eviden - Atos",
+            dates: "March 2025 - Present",
             description: `
             <ul class="experience-list">
-                <li>Currently curating and expanding datasets to improve Optical Character Recognition (OCR) performance.</li>
-                <li>Actively managing and maintaining an OCR model in pre-production, implementing enhancements as needed.</li>
-                <li>Developing a Chatbot using Agentic RAG to provide dynamic product pricing based on size and additional items, along with general company information.</li>
+                <li>Contributing to the Innovation Team within the Computer Vision Lab, focused on developing client-oriented applications powered by vision models.</li>
+                <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
+                <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
+                <li>Co-developing a Multicam Annotation Tool, a semi-automated system that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
+                <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
             </ul>
             `,
         },
         {
-            title: "AI Engineer Intern",
-            company: "Cosywee",
-            dates: "2024 - 2024",
+            title: "Resource Planning Optimizaiton Research Intern",
+            company: "Institut Mines Télécom",
+            dates: "June - August 2024",
             description: `
             <ul class="experience-list">
-                <li>Constructed a comprehensive company dataset and ground truth labels to support OCR model fine-tuning.</li>
-                <li>Fine-Tuned a Pre-trained Model:
-                    <ul class="sublist">
-                        <li>Optimized a pre-trained TrOCR (Transformer-based OCR model) for general text, numeric, and special character recognition tasks.</li>
-                        <li>Adapted the model specifically to the company's proprietary dataset for enhanced accuracy.</li>
-                    </ul>
-                </li>
-                <li>Pre-trained and Fine-Tuned a Custom OCR Model:
-                    <ul class="sublist">
-                        <li>Developed a CNN-based ResNet-BiLSTM architecture for numeric recognition tasks.</li>
-                        <li>Pre-trained the model using a synthetic and open-source dataset containing ~19 million samples.</li>
-                        <li>Fine-tuned the model on a proprietary dataset of ~20,000 samples to improve performance and robustness.</li>
-                    </ul>
-                </li>
-                <li>Developed an automation pipeline to connect to a mail server using Microsoft Graph API and locally download mailboxes containing quotations or purchase orders for OCR.</li>
+                <li>La Chaire de recherche "Digital Twin for industrial production systems"</li>
+                <li>Analyzed machine performance and production bottlenecks; developed an AI-driven approach to address an NP-hard optimization problem aimed at minimizing production time.</li>
+                <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
+                <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
+                <li>Awarded an academic score of 19.25/20 for the internship.</li>
+                <li>Technologies: Python, Heuristic Optimization, Flask</li>
             </ul>
-
-
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
         },
         {
             title: "Research and Development Mission",
-            company: "IMT Mines Ales",
-            dates: "2024 - 2024",
+            company: "IMT-Mines-Ales - clicNwork",
+            dates: "January - April 2024",
             description: `
             <ul class="experience-list">
-                <li>Build and compare a regression model to forecast the level of glucose in 30 minutes using a hybrid CNN-LSTM model.</li>
-                <li>Build a classification model to classify a patient's state (hyperglycemia, hypoglycemia, normal) based on the recorded data using the same model.</li>
+                <li>Preprocessed, visualized, and analyzed time series data to extract insights and identify trends.</li>
+                <li>Developed predictive models to forecast temporary workforce demand based on historical data.</li>
+                <li>Implemented statistical models including Exponential Smoothing, ARIMA, and Facebook Prophet,and deep learning models LSTM for time series forecasting.</li>
+                <li>Technologies: Python, R, Numpy, Pandas, Matplotlib, Pytorch</li>
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
         },
         {
-            title: "Intern",
-            company: "GEOCHANVRE",
-            dates: "2024 - 2024",
+            title: "Intern – ERP Deployment (Dolibarr)",
+            company: "EFFIdomus",
+            dates: "November – December 2023",
             description: `
             <ul class="experience-list">
-                <li>Develop an inventory management application and database for the factory's stock control.</li>
-                <li>Integrate QR codes for each product type into the application.</li>
+                <li>Deployment of Dolibarr ERP within the design office to improve internal workflow efficiency.</li>
+                <li>Automated the import of large datasets from Excel to Dolibarr, reducing manual input and ensuring data accuracy.</li>
+                <li>Assisted in optimizing business processes by configuring and adapting ERP modules to meet specific operational requirements.</li>
+                <li>Technologies: Dolibarr, HTML, Excel</li>
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
         },
         {
-            title: "Research Assistant",
-            company: "ViLa Laboratory",
+            title: "Research Student",
+            company: "ViLa Laboratory - Air Handwriting Recognition for Khmer Characters",
             dates: "2022 - 2023",
             description: `
             <ul class="experience-list">
-                <li>Experiment by training the model with different hyperparameters and collecting a dataset to train the model.</li>
-                <li>Assist researchers in various tasks</li>
-                <li>Participate in the presentation of a poster on the research theme during the national scientific day.</li>
+                <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for character classification.</li>
+                <li>Integrated OpenCV-based gesture tracking to enable real-time air handwriting input.</li>
+                <li>Achieved a test accuracy of 89.06%, demonstrating effective recognition of Khmer characters in dynamic input conditions.</li>
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
