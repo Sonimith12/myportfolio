@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>Contributing to the Innovation Team within the Computer Vision Lab, focused on developing client-oriented applications powered by vision models.</li>
                 <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
                 <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
-                <li>Co-developing a Multicam Annotation Tool, a semi-automated system that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
+                <li>Co-developing a Multicam Annotation Tool, a semi-automated tool that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
                 <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
             </ul>
             `,
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
             dates: "June - August 2024",
             description: `
             <ul class="experience-list">
-                <li>La Chaire de recherche "Digital Twin for industrial production systems"</li>
-                <li>Analyzed machine performance and production bottlenecks; developed an AI-driven approach to address an NP-hard optimization problem aimed at minimizing production time.</li>
+                <li>La Chaire de recherche "Digital Twin for industrial production systems."</li>
+                <li>Analyzed machine performance and production bottlenecks; developed AI-driven approaches to address an NP-hard optimization problem aimed at minimizing production time.</li>
                 <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
                 <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
                 <li>Awarded an academic score of 19.25/20 for the internship.</li>
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
         },
         {
-            title: "Research Student",
+            title: "Research Member",
             company: "ViLa Laboratory - Air Handwriting Recognition for Khmer Characters",
             dates: "2022 - 2023",
             description: `
@@ -198,12 +198,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic Content
     const skills = [
-        'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'FastAPI', 'Flask', 'JavaScript', 'PHP', 'MLops',
-        'Laravel', 'Streamlit', 'Shell Scripting', 'Vue.js', 'Spring Boot', 'HTML', 'CSS', 'Tailwind CSS', 'Docker', 'Google Cloud Platform', 'LangChain','LangGraph',
-        'NLP','Computer Vision' ,'Deep Learning', 'Deep Reinforcement Learning', 'LLM', 'Linux',
-        'Git', 'Machine Learning', 'PERT', 'OCR', 'Object Detection', 'Object Classification',
-        'Web Development',
+        'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
+        'Scikit-Learn', 'Pytest', 'GTest', 'Flash', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
+        'NoSQL: MongDB',
     ];
+    const knowledges = [
+        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs, vLLMs', 'Signal Processing', 'Yolo', 'Reinforcment Learning', 'Deep Reinforcement Learning',
+    ]
 
     const projects = [
          {
