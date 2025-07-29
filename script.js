@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>Analyzed machine performance and production bottlenecks; developed AI-driven approaches to address an NP-hard optimization problem aimed at minimizing production time.</li>
                 <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
                 <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
-                <li>Awarded an academic score of 19.25/20 for the internship.</li>
-                <li>Technologies: Python, Heuristic Optimization, Flask</li>
+                <li>An academic score of 19.25/20 for the internship.</li>
+                <li>Technologies: Python, Heuristic Optimization, Flask, Pandas, Numpy</li>
             </ul>
             `,
             // description: "Pre-trained and Fine-tuned a Custom OCR Model"
@@ -69,8 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
             dates: "2022 - 2023",
             description: `
             <ul class="experience-list">
-                <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for character classification.</li>
+                <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for Khmer character classification.</li>
                 <li>Integrated OpenCV-based gesture tracking to enable real-time air handwriting input.</li>
+                <li>Achieved 89.06% accuracy.</li>
                 <li>Technologies: Python, OpenCV, Pytorch</li>
             </ul>
             `,
@@ -81,35 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add Certifications Data
     const certifications = [
         {
-            title: "Fundamentals of MCP",
-            issuer: "Hugging Face",
-            date: "2024",
-            link: "https://drive.google.com/file/d/1czVQsVSKyvkJpmyNjsa0I2d861IjdvKk/view?usp=sharing"
-        },
-        {
-            title: "LLM",
-            issuer: "Hugging Face",
+            title: "GANs: Complete Guide",
+            issuer: "Udemy - AI Expert Academy",
             date: "2025",
-            link: "https://drive.google.com/file/d/1VKH7Enj34OHoI9K27NFKovIxacDqoxSj/view?usp=sharing"
+            link: "https://drive.google.com/file/d/18FDgbh3TNkflbgSnnLaqDhv209wEMCMj/view?usp=sharing"
         },
         {
-            title: "AI Agents Fundamentals",
-            issuer: "Hugging Face",
-            date: "2025",
-            link: "https://drive.google.com/file/d/1QndLNzEzg7N0CpUxgYWBhqXDPOdXOcQe/view?usp=sharing"
-        },
-        {
-            title: "Advanced Learning Algorithms",
-            issuer: "Coursera",
+            title: "Data Analysis",
+            issuer: "Coursera - Google",
             date: "2024",
-            link: "https://www.coursera.org/account/accomplishments/verify/8ALUPZRDWUNY"
+            link: "https://drive.google.com/file/d/1VJ1AuR_YR98rsmg8p68Av6J4zWTolwDy/view?usp=sharing"
         },
-        {
-            title: "ML: Regression and Classification",
-            issuer: "Coursera",
-            date: "2024",
-            link: "https://www.coursera.org/account/accomplishments/verify/WKVBV7H58XPA"
-        }
+        
     ];
 
     // Populate Experience
@@ -199,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Content
     const skills = [
         'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
-        'Scikit-Learn', 'Pytest', 'GTest', 'Flash', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
+        'Scikit-Learn', 'Pytest', 'GTest', 'Flask', 'FastAPI', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
         'MongDB',
     ];
     const knowledges = [
@@ -232,107 +216,123 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'academic-chatbot',
-            title: 'Hackathon 1st place: Hackathon 1st Place: Patient Activity Prediction from Bracelet Acceleration Signals',
+            title: 'Hackathon 1st place: Patient Activity Prediction from Bracelet Acceleration Signals',
             description: `
-                <ul class="">
-                    <li>Conducted a comparative study of two chatbot development approaches: fine-tuning and Retrieval-Augmented Generation (RAG).</li>
-                    <li>Fine-tuned the pre-trained Llama 3.1 8B language model using UnSloth and LoRA, specifically optimized to assist international students by leveraging a custom academic dataset.</li>
-                    <li>Developed and implemented a robust RAG system that combines the Llama 3.1 8B model with a hybrid retrieval mechanism using BM25 and embedding model with reranker(BGE-M3 with BGE-Reranker).</li>
-                    <li>The dataset included comprehensive information such as:
-                        <ul class="sublist">
-                            <li>Housing and rental options for students.</li>
-                            <li>Study and work conditions for international learners.</li>
-                            <li>Detailed descriptions of courses, curricula, and academic requirements in the Department of Informatics and Artificial Intelligence.</li>
-                        </ul>
+                <ul>
+                    <li>
+                        The main objective of the hackathon was to predict patient activities based on data collected from two bracelets worn on each hand. The dataset contained Cartesian coordinates (x, y, z) for both hands, representing activities such as eating, sleeping, bathing, and changing clothes. The signal was highly noisy and included missing values. Various preprocessing techniques were explored to retain only meaningful semantic information for accurate prediction. Methods such as interpolation were applied to handle missing data. As a team of five, we experimented with a range of models—from traditional machine learning approaches to deep learning and transformer-based architectures.
                     </li>
-                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
-                    Demo
-                    <source src="https://github.com/user-attachments/assets/3ba61ac0-f84b-45bf-babd-4988ba909a1e">
-                    </video>
+                    <li>
+                        A key aspect of the project involved transforming the signal from the time domain to the frequency domain using the Fast Fourier Transform (FFT), followed by applying Linear Discriminant Analysis (LDA) to reduce the frequency-domain features to a 2D space. This enabled us to visualize class separation. While certain activities were clearly distinguishable, others overlapped significantly, suggesting that acceleration data alone (x, y, z) may not be sufficient to differentiate between similar types of activities.
+                    </li>
                 </ul>
 
+
             `,
-            tech: 'Python, LLM, RAG, PyTorch, Deep Learning, Fine Tuning, LangChain, PERT, Git'
+            tech: 'Python, Pandas, Numpy, FFT, LDA, Transformer, LSTM'
         },
         {
             id: 'object-detection',
-            title: 'Application of the LoRA on Object Detection model',
+            title: 'Comparing RAG and LoRA for Metaphor Comprehension: A Study on Mistral-7B with the LCC Dataset',
             description: `
                 <ul>
-                    <li>This research project was conducted in collaboration with a PhD student from Sorbonne University. The objective was to explore the application of LoRA (Low-Rank Adaptation) to enhance the performance of DiffusionDet, an object detection model, under few-shot learning conditions. The goal was to evaluate whether LoRA can effectively adapt the model to new object categories using limited annotated data, improving efficiency and generalization in low-resource scenarios.</li>
-                    <li>We applied this approach to aerial imagery datasets, specifically DOTA (Dataset for Object Detection in Aerial Images) and DIOR (Dataset for Object Recognition in Aerial Images). These datasets contain complex scenes with multiple object classes captured from aerial perspectives, making them ideal for evaluating few-shot object detection in real-world scenarios.
+                    <li>
+                        LLMs—particularly smaller models like Mistral 7B—often struggle with metaphor comprehension due to limited contextual reasoning. 
+                        To address this, metaphor understanding was evaluated using the LCC Metaphor Dataset via two approaches: 
+                        <strong>LoRA fine-tuning</strong> and <strong>Retrieval-Augmented Generation (RAG) using ChromaDB</strong>. 
+                        The objective was to predict the target domain of a metaphor given the full metaphorical phrase. 
+                        Evaluation was based on prediction accuracy, allowing for minor variations in phrasing.
                     </li>
-                    <li>The paper can be found here: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
+                    <li>
+                        <strong>RAG achieved 99.8% accuracy</strong>, significantly outperforming the LoRA-tuned model (38.1%) and the baseline (34.9%). 
+                        The results demonstrate that RAG is highly effective for structured, low-resource tasks, while LoRA offers a scalable and lightweight alternative.
+                    </li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+            tech: 'Python, Pytorch, Transformer, Low-rank Adaptation (LoRA), Retrieval-Augmented Generation (RAG), ChromaDB'
         },
-        {
-            id: 'ocr',
-            title: 'Handwritten Text Recognition with Fine-Tuned TrOCR',
-            description: `
-                <ul>
-                    <li>This project fine-tunes the microsoft/trocr-large-handwritten model from Hugging Face for handwritten text recognition on a custom dataset. The goal is to adapt the model to recognize specific handwritten text styles or domains with improved accuracy.
-                    </li>
-                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
-                    Demo
-                    <source src="https://github.com/user-attachments/assets/9c08b124-290e-45eb-88f7-775e8118e7c6">
-                    </video>
-                </ul>
-            `,
-            tech: 'Python, PyTorch, Transformer, LoRA, Git'
-        },
-        {
-            id: 'object-classification',
-            title: 'Object classification',
-            description: `<ul>
-                <li>
-                    Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.
-                </li>
+        // {
+        //     id: 'ocr',
+        //     title: 'Handwritten Text Recognition with Fine-Tuned TrOCR',
+        //     description: `
+        //         <ul>
+        //             <li>This project fine-tunes the microsoft/trocr-large-handwritten model from Hugging Face for handwritten text recognition on a custom dataset. The goal is to adapt the model to recognize specific handwritten text styles or domains with improved accuracy.
+        //             </li>
+        //             <video controls style="width: 100%; height: auto; margin-top: 10px;">
+        //             Demo
+        //             <source src="https://github.com/user-attachments/assets/9c08b124-290e-45eb-88f7-775e8118e7c6">
+        //             </video>
+        //         </ul>
+        //     `,
+        //     tech: 'Python, PyTorch, Transformer, LoRA, Git'
+        // },
+        // {
+        //     id: 'object-classification',
+        //     title: 'Object classification',
+        //     description: `<ul>
+        //         <li>
+        //             Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.
+        //         </li>
                 
-                    <video controls style="width: 100%; height: auto; margin-top: 10px;">
-                    Demo
-                    <source src="https://github.com/user-attachments/assets/ae1c0d9a-5c9c-4c3d-885f-fecacd865b87">
-                    </video>
-            </ul>`,
+        //             <video controls style="width: 100%; height: auto; margin-top: 10px;">
+        //             Demo
+        //             <source src="https://github.com/user-attachments/assets/ae1c0d9a-5c9c-4c3d-885f-fecacd865b87">
+        //             </video>
+        //     </ul>`,
             
             
-            tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
-        },
+        //     tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
+        // },
+        // {
+        //     id: 'asr',
+        //     title: 'Automatic Speech Recognition (ASR)',
+        //     description: `
+        //         <ul class="">
+        //             <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset to enhance performance for speech-to-text applications.</li>
+        //         </ul>
+        //     `,
+        //     tech: 'Python, PyTorch, Deep Learning, Fine Tuning, Transformers'
+        // },
+        // {
+        //     id: 'handmotion-prediction',
+        //     title: 'HandMotion Prediction',
+        //     description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
+        //     tech: 'Python, Data Analysis, PyTorch, Time-series, Git'
+        // },
+        // {
+        //     id: 'e-commerce',
+        //     title: 'E-Commerce Web application',
+        //     description: `Developed a web application for sports shoe sales using a Vue.js frontend and a Laravel backend. The frontend, built with Vue.js, provided a dynamic and responsive user interface, enabling users to browse products, filter by size, brand, and category, and manage their shopping cart in real time. The backend, powered by Laravel, handled key functionalities such as user authentication, product management, inventory tracking, order processing, and payment integration. The system also included an admin dashboard for managing product listings, viewing sales analytics, and handling customer queries. The application aimed to deliver a seamless e-commerce experience optimized for both desktop and mobile users.`,
+        //     tech: 'Java script, PHP, Vue.js, Laravel, HTML, CSS, Tailwind, Git'
+        // },
         {
-            id: 'asr',
-            title: 'Automatic Speech Recognition (ASR)',
+            id: 'ai-web-app',
+            title: 'Multimodal AI Web Application',
             description: `
-                <ul class="">
-                    <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset to enhance performance for speech-to-text applications.</li>
+                <ul>
+                    <li>Developed a Flask-based web application integrating vision and language models.</li>
+                    <li>Implemented image classification using a pretrained Vision Transformer (ViT) model from Hugging Face.</li>
+                    <li>Integrated real-time object detection with YOLOv3 via OpenCV and webcam streaming.</li>
+                    <li>Built a chatbot interface powered by a lightweight LLM for natural language conversation.</li>
+                    <li>Enabled session-based conversation history and response generation via a custom text-generation module.</li>
+                    <li>Designed multiple endpoints for image upload, classification, and chat interaction with dynamic rendering in HTML.</li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, Deep Learning, Fine Tuning, Transformers'
+            tech: 'Python, Flask, OpenCV, PyTorch, Transformers, HTML, CSS, JavaScript'
         },
         {
-            id: 'handmotion-prediction',
-            title: 'HandMotion Prediction',
-            description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
-            tech: 'Python, Data Analysis, PyTorch, Time-series, Git'
-        },
-        {
-            id: 'e-commerce',
-            title: 'E-Commerce Web application',
-            description: `Developed a web application for sports shoe sales using a Vue.js frontend and a Laravel backend. The frontend, built with Vue.js, provided a dynamic and responsive user interface, enabling users to browse products, filter by size, brand, and category, and manage their shopping cart in real time. The backend, powered by Laravel, handled key functionalities such as user authentication, product management, inventory tracking, order processing, and payment integration. The system also included an admin dashboard for managing product listings, viewing sales analytics, and handling customer queries. The application aimed to deliver a seamless e-commerce experience optimized for both desktop and mobile users.`,
-            tech: 'Java script, PHP, Vue.js, Laravel, HTML, CSS, Tailwind, Git'
-        },
-        {
-            id: 'cafe-system',
-            title: 'Café System',
-            description: `Developed a Point of Sale (POS) management system for a café using Java and the Spring Boot backend framework. The system was designed to streamline daily operations by managing orders, inventory, tables, billing, and staff roles. Key features included real-time order tracking, digital receipts, menu management, and role-based access for cashiers and administrators. The backend was built with Spring Boot to ensure scalability, modularity, and efficient API handling. The application aimed to improve service speed, reduce human error, and provide insightful sales reports for business analysis.`,
-            tech: 'Java, Spring Boot, HTML, CSS, Tailwind, Java script ,Git'
-        },
-        {
-            id: 'air-writing',
-            title: 'Air Writing',
-            description: `Collected and prepared khmer dataset to train and fine-tune an existing machine learning model with the goal of improving its prediction accuracy. The process involved data cleaning, augmentation, and labeling to ensure high-quality input. The model was retrained using the updated dataset, followed by performance evaluation through metrics such as accuracy, precision, recall, and F1-score. This iterative process helped enhance the model’s generalization and reliability in real-world scenarios.`,
-            tech: 'Python, PyTorch ,Git'
-        },
+            id: 'robot-arm-rl',
+            title: 'Musculoskeletal Control of a Robot Arm using Reinforcement Learning',
+            description: `
+                <ul>
+                <li>Designed a custom musculoskeletal environment simulating a two-joint arm with 11 muscles, incorporating biomechanical properties such as inertia, damping, and gravity. The task was modeled as a Markov Decision Process with a reward function promoting precision, smoothness, and energy efficiency.</li>
+                <li>Trained a reinforcement learning agent using the Soft Actor-Critic (SAC) algorithm to generate muscle activations that allow the arm to reach dynamic targets. The agent achieved stable convergence and generalization across target positions within 250,000 training steps.</li>
+                </ul>
+            `,
+            tech: 'Python, PyTorch, OpenAI Gym, Reinforcement Learning, Soft Actor-Critic (SAC), Biomechanics Simulation'
+            }
+
+
     ];
 
     
@@ -410,7 +410,7 @@ const education = [
         details: ""
     },
     {
-        degree: "BSc in Computer Science",
+        degree: "BSc in Computer Science and Networks",
         institution: "Institute of Technology of Cambodia",
         dates: "2019 - 2023",
         details: ""
