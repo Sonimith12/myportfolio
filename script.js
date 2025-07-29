@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: 'Python, OpenCV, Ultralytics (Yolo)'
         },
         {
-            id: 'academic-chatbot',
+            id: 'hackathon',
             title: 'Hackathon 1st place: Patient Activity Prediction from Bracelet Acceleration Signals',
             description: `
                 <ul>
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tech: 'Python, Pandas, Numpy, FFT, LDA, Transformer, LSTM'
         },
         {
-            id: 'object-detection',
+            id: 'llm-rag-lora',
             title: 'Comparing RAG and LoRA for Metaphor Comprehension: A Study on Mistral-7B with the LCC Dataset',
             description: `
                 <ul>
