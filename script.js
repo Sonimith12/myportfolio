@@ -353,13 +353,14 @@ const projects = [
         description: {
             en: `
                 <ul>
-                    <li>Designed a custom musculoskeletal environment simulating a two-joint arm with 11 muscles, incorporating biomechanical properties such as inertia, damping, and gravity. The task was modeled as a Markov Decision Process with a reward function promoting precision, smoothness, and energy efficiency.</li>
+                    <li>Used a musculoskeletal simulation environment modeling a two-joint arm with 6 muscles, incorporating biomechanical properties such as inertia, damping, and gravity. The task was framed as a Markov Decision Process with a reward function promoting precision, smoothness, and energy efficiency.</li>
                     <li>Trained a reinforcement learning agent using the Soft Actor-Critic (SAC) algorithm to generate muscle activations that allow the arm to reach dynamic targets. The agent achieved stable convergence and generalization across target positions within 250,000 training steps.</li>
                 </ul>
             `,
+
             fr: `
                 <ul>
-                    <li>Conception d’un environnement musculosquelettique simulant un bras à deux articulations et 11 muscles, intégrant des propriétés biomécaniques comme l’inertie, l’amortissement et la gravité. La tâche est formulée comme un processus de décision de Markov avec une fonction de récompense favorisant la précision, la fluidité et l’efficacité énergétique.</li>
+                    <li>Utilisation d’un environnement de simulation musculosquelettique modélisant un bras à deux articulations et 6 muscles, intégrant des propriétés biomécaniques telles que l’inertie, l’amortissement et la gravité. La tâche est formulée comme un processus de décision de Markov avec une fonction de récompense favorisant la précision, la fluidité et l’efficacité énergétique.</li>
                     <li>Entraînement d’un agent d’apprentissage par renforcement avec l’algorithme Soft Actor-Critic (SAC) pour générer des activations musculaires permettant au bras d’atteindre des cibles dynamiques. L’agent a atteint une convergence stable et une bonne généralisation en 250 000 étapes d’apprentissage.</li>
                 </ul>
             `
@@ -462,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic Content
     const skills = [
         'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
-        'Scikit-Learn', 'Pytest', 'GTest', 'Flask', 'FastAPI', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
+        'Scikit-Learn', 'Pytest', 'GTest', 'Flask', 'FastAPI', 'Git', 'Unsloth', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
         'MongDB',
     ];
 
