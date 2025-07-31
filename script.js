@@ -1,314 +1,327 @@
-// script.js
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    // Previous background and setup code remains the same
-
-    // Add Experience Data
-    const experiences = [
-        {
-            title: "Software Development Intern – Computer Vision",
-            company: "Eviden - Atos",
-            dates: "March 2025 - Present",
-            description: `
-            <ul class="experience-list">
-                <li>Contributing to the Innovation Team within the Computer Vision Lab, focused on developing client-oriented applications powered by vision models.</li>
-                <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
-                <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
-                <li>Co-developing a Multicam Annotation Tool, a semi-automated tool that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
-                <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
-            </ul>
-            `,
+const experiences = [
+    {
+        title: {
+            en: "R&D Intern – Computer Vision",
+            fr: "Stagiaire R&D – Vision par Ordinateur"
         },
-        {
-            title: "Resource Planning Optimizaiton Research Intern",
-            company: "Institut Mines Télécom",
-            dates: "June - August 2024",
-            description: `
-            <ul class="experience-list">
-                <li>La Chaire de recherche "Digital Twin for industrial production systems."</li>
-                <li>Analyzed machine performance and production bottlenecks; developed AI-driven approaches to address an NP-hard optimization problem aimed at minimizing production time.</li>
-                <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
-                <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
-                <li>An academic score of 19.25/20 for the internship.</li>
-                <li>Technologies: Python, Heuristic Optimization, Flask, Pandas, Numpy</li>
-            </ul>
-            `,
-            // description: "Pre-trained and Fine-tuned a Custom OCR Model"
+        company: {
+            en: "Eviden - Atos",
+            fr: "Eviden - Atos"
         },
-        {
-            title: "Research and Development Mission",
-            company: "IMT-Mines-Ales - clicNwork",
-            dates: "January - April 2024",
-            description: `
-            <ul class="experience-list">
-                <li>Preprocessed, visualized, and analyzed time series data to extract insights and identify trends.</li>
-                <li>Developed predictive models to forecast temporary workforce demand based on historical data.</li>
-                <li>Implemented statistical models including Exponential Smoothing, ARIMA, and Facebook Prophet,and deep learning models LSTM for time series forecasting.</li>
-                <li>Technologies: Python, R, Numpy, Pandas, Matplotlib, Pytorch</li>
-            </ul>
+        dates: "March 2025 - Present",
+        description: {
+            en: `
+                <ul class="experience-list">
+                    <li>Contributing to the Innovation Team within the Computer Vision Lab, focused on developing client-oriented applications powered by vision models.</li>
+                    <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
+                    <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
+                    <li>Co-developing a Multicam Annotation Tool, a semi-automated tool that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
+                    <li>Recommendation letter available upon request.</li>
+                    <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
+                </ul>
             `,
-            // description: "Pre-trained and Fine-tuned a Custom OCR Model"
-        },
-        {
-            title: "Intern – ERP Deployment (Dolibarr)",
-            company: "EFFIdomus",
-            dates: "November – December 2023",
-            description: `
-            <ul class="experience-list">
-                <li>Deployment of Dolibarr ERP within the design office to improve internal workflow efficiency.</li>
-                <li>Automated the import of large datasets from Excel to Dolibarr, reducing manual input and ensuring data accuracy.</li>
-                <li>Assisted in optimizing business processes by configuring and adapting ERP modules to meet specific operational requirements.</li>
-                <li>Technologies: Dolibarr, HTML, Excel</li>
-            </ul>
-            `,
-            // description: "Pre-trained and Fine-tuned a Custom OCR Model"
-        },
-        {
-            title: "Research Member",
-            company: "ViLa Laboratory - Air Handwriting Recognition for Khmer Characters",
-            dates: "2022 - 2023",
-            description: `
-            <ul class="experience-list">
-                <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for Khmer character classification.</li>
-                <li>Integrated OpenCV-based gesture tracking to enable real-time air handwriting input.</li>
-                <li>Achieved 89.06% accuracy.</li>
-                <li>Technologies: Python, OpenCV, Pytorch</li>
-            </ul>
-            `,
-            // description: "Pre-trained and Fine-tuned a Custom OCR Model"
+            fr: `
+                <ul class="experience-list">
+                    <li>Contribution à l'équipe Innovation du laboratoire de vision par ordinateur, axée sur le développement d'applications orientées client basées sur des modèles de vision.</li>
+                    <li>Amélioration du système de suivi multi-cibles multi-caméras (MTMC) en optimisant le composant de ré-identification (ReID) ; conception et validation d'une approche innovante pour améliorer les performances du modèle ReID.</li>
+                    <li>Intégration du concept de validation dans VISuite d'Ipsotek, une plateforme de pointe en analyse vidéo.</li>
+                    <li>Co-développement d’un outil d’annotation multicaméras, un outil semi-automatisé permettant de corriger manuellement les prédictions du modèle ReID sur plusieurs vues caméra, facilitant la création de jeux de données propres pour l'entraînement, les tests et l'évaluation.</li>
+                    <li>Lettre de recommandation disponible sur demande.</li>
+                    <li>Technologies : Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
+                </ul>
+            `
         }
-    ];
-
-    // Add Certifications Data
-    const certifications = [
-        {
-            title: "GANs: Complete Guide",
-            issuer: "Udemy - AI Expert Academy",
-            date: "2025",
-            link: "https://drive.google.com/file/d/18FDgbh3TNkflbgSnnLaqDhv209wEMCMj/view?usp=sharing"
+    },
+    {
+        title: {
+            en: "Resource Planning Optimization Research Intern",
+            fr: "Stagiaire Recherche – Optimisation de la Planification des Ressources"
         },
-        {
-            title: "Data Analysis",
-            issuer: "Coursera - Google",
-            date: "2024",
-            link: "https://drive.google.com/file/d/1VJ1AuR_YR98rsmg8p68Av6J4zWTolwDy/view?usp=sharing"
+        company: {
+            en: "Institut Mines Télécom",
+            fr: "Institut Mines Télécom"
         },
-        
-    ];
-
-    // Populate Experience
-    const experienceTimeline = document.querySelector('.experience-timeline');
-    experiences.forEach(exp => {
-        const div = document.createElement('div');
-        div.className = 'experience-item';
-        div.innerHTML = `
-            <h3>${exp.title}</h3>
-            <div class="experience-company">${exp.company}</div>
-            <div class="experience-dates">${exp.dates}</div>
-            <div class="experience-description">${exp.description}</div>
-        `;
-        experienceTimeline.appendChild(div);
-    });
-    // Populate Certifications
-    const certsGrid = document.querySelector('.certifications-grid');
-    certifications.forEach(cert => {
-        const div = document.createElement('div');
-        div.className = 'certification-card';
-        div.innerHTML = `
-            <h3><a href="${cert.link}" target="_blank">${cert.title}</a></h3>
-            <p>${cert.issuer}</p>
-            <div class="cert-date">${cert.date}</div>
-        `;
-        certsGrid.appendChild(div);
-    });
-
-    // Rest of previous JavaScript code remains the same
-});
-document.addEventListener('DOMContentLoaded', () => {
-    // Animated Background
-    const canvas = document.getElementById('techBg');
-    const ctx = canvas.getContext('2d');
-    
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    
-    class Particle {
-        constructor() {
-            this.reset();
+        dates: "June - August 2024",
+        description: {
+            en: `
+                <ul class="experience-list">
+                    <li>La Chaire de recherche "Digital Twin for industrial production systems."</li>
+                    <li>Analyzed machine performance and production bottlenecks; developed AI-driven approaches to address an NP-hard optimization problem aimed at minimizing production time.</li>
+                    <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
+                    <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
+                    <li>An academic score of 19.25/20 for the internship. Recommendation letter available upon request.</li>
+                    <li>Technologies: Python, Heuristic Optimization, Flask, Pandas, Numpy</li>
+                </ul>
+            `,
+            fr: `
+                <ul class="experience-list">
+                    <li>Chaire de recherche "Jumeau numérique pour les systèmes de production industrielle".</li>
+                    <li>Analyse des performances des machines et des goulets d'étranglement de la production ; développement d'approches basées sur l'IA pour résoudre un problème d’optimisation NP-difficile visant à minimiser le temps de production.</li>
+                    <li>Réduction des cycles de production hebdomadaires de 40 % (de 107–140 heures à 65–90 heures), tout en conservant le même niveau de production.</li>
+                    <li>Conception et implémentation d'une interface utilisateur pour interagir avec l'outil d'optimisation.</li>
+                    <li>Note académique : 19.25/20. Lettre de recommandation disponible sur demande.</li>
+                    <li>Technologies : Python, Optimisation Heuristique, Flask, Pandas, Numpy</li>
+                </ul>
+            `
         }
-        
-        reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 2;
-            this.speed = Math.random() * 0.5 + 0.1;
-            this.angle = Math.random() * Math.PI * 2;
+    },
+    {
+        title: {
+            en: "Research and Development Mission",
+            fr: "Mission de Recherche et Développement"
+        },
+        company: {
+            en: "IMT-Mines-Ales - clicNwork",
+            fr: "IMT-Mines-Alès - clicNwork"
+        },
+        dates: "January - April 2024",
+        description: {
+            en: `
+                <ul class="experience-list">
+                    <li>Preprocessed, visualized, and analyzed time series data to extract insights and identify trends.</li>
+                    <li>Developed predictive models to forecast temporary workforce demand based on historical data.</li>
+                    <li>Implemented statistical models including Exponential Smoothing, ARIMA, and Facebook Prophet, and deep learning models like LSTM for time series forecasting.</li>
+                    <li>Technologies: Python, R, Numpy, Pandas, Matplotlib, PyTorch</li>
+                </ul>
+            `,
+            fr: `
+                <ul class="experience-list">
+                    <li>Prétraitement, visualisation et analyse de séries temporelles pour extraire des informations et identifier des tendances.</li>
+                    <li>Développement de modèles prédictifs pour estimer la demande en main-d'œuvre temporaire à partir de données historiques.</li>
+                    <li>Implémentation de modèles statistiques comme le lissage exponentiel, ARIMA, Facebook Prophet, ainsi que de modèles d’apprentissage profond de type LSTM pour la prévision de séries temporelles.</li>
+                    <li>Technologies : Python, R, Numpy, Pandas, Matplotlib, PyTorch</li>
+                </ul>
+            `
         }
-        
-        update() {
-            this.x += Math.cos(this.angle) * this.speed;
-            this.y += Math.sin(this.angle) * this.speed;
-            
-            if (this.x < 0 || this.x > canvas.width || 
-                this.y < 0 || this.y > canvas.height) {
-                this.reset();
-            }
+    },
+    {
+        title: {
+            en: "Intern – ERP Deployment (Dolibarr)",
+            fr: "Stagiaire – Déploiement ERP (Dolibarr)"
+        },
+        company: {
+            en: "EFFIdomus",
+            fr: "EFFIdomus"
+        },
+        dates: "November – December 2023",
+        description: {
+            en: `
+                <ul class="experience-list">
+                    <li>Deployment of Dolibarr ERP within the design office to improve internal workflow efficiency.</li>
+                    <li>Automated the import of large datasets from Excel to Dolibarr, reducing manual input and ensuring data accuracy.</li>
+                    <li>Assisted in optimizing business processes by configuring and adapting ERP modules to meet specific operational requirements.</li>
+                    <li>Technologies: Dolibarr, HTML, Excel</li>
+                </ul>
+            `,
+            fr: `
+                <ul class="experience-list">
+                    <li>Déploiement de l’ERP Dolibarr au sein du bureau d’études afin d’améliorer l’efficacité des flux internes.</li>
+                    <li>Automatisation de l’importation de grands ensembles de données depuis Excel vers Dolibarr, réduisant les saisies manuelles et assurant la fiabilité des données.</li>
+                    <li>Assistance à l’optimisation des processus métiers en configurant et en adaptant les modules ERP aux besoins spécifiques de l’entreprise.</li>
+                    <li>Technologies : Dolibarr, HTML, Excel</li>
+                </ul>
+            `
         }
-        
-        draw() {
-            ctx.fillStyle = 'rgba(35,134,54,0.3)';
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fill();
+    },
+    {
+        title: {
+            en: "Research Student",
+            fr: "Membre de Recherche"
+        },
+        company: {
+            en: "ViLa Laboratory – Air Handwriting Recognition for Khmer Characters",
+            fr: "Laboratoire ViLa – Reconnaissance d’Écriture Aérienne des Caractères Khmers"
+        },
+        dates: "2022 - 2023",
+        description: {
+            en: `
+                <ul class="experience-list">
+                    <li>Curated a custom Khmer handwritten character dataset and trained a multi-layer perceptron (MLP) for Khmer character classification.</li>
+                    <li>Integrated OpenCV-based gesture tracking to enable real-time air handwriting input.</li>
+                    <li>Achieved 89.06% accuracy.</li>
+                    <li>Technologies: Python, OpenCV, PyTorch</li>
+                </ul>
+            `,
+            fr: `
+                <ul class="experience-list">
+                    <li>Création d’un jeu de données personnalisé de caractères khmers manuscrits et entraînement d’un perceptron multicouche (MLP) pour la classification des caractères.</li>
+                    <li>Intégration d’un suivi de gestes basé sur OpenCV pour permettre la saisie manuscrite en temps réel dans l’air.</li>
+                    <li>Précision obtenue : 89,06 %.</li>
+                    <li>Technologies : Python, OpenCV, PyTorch</li>
+                </ul>
+            `
         }
     }
+];
 
-    const particles = Array(100).fill().map(() => new Particle());
-    
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-            p.update();
-            p.draw();
-        });
-        requestAnimationFrame(animate);
+
+const certifications = [
+    {
+        title: {
+            en: "GANs: Complete Guide",
+            fr: "GANs : Guide Complet"
+        },
+        issuer: {
+            en: "Udemy - AI Expert Academy",
+            fr: "Udemy - AI Expert Academy"
+        },
+        date: "2025",
+        link: "https://drive.google.com/file/d/18FDgbh3TNkflbgSnnLaqDhv209wEMCMj/view?usp=sharing"
+    },
+    {
+        title: {
+            en: "Data Analysis",
+            fr: "Analyse de Données"
+        },
+        issuer: {
+            en: "Coursera - Google",
+            fr: "Coursera - Google"
+        },
+        date: "2024",
+        link: "https://drive.google.com/file/d/1VJ1AuR_YR98rsmg8p68Av6J4zWTolwDy/view?usp=sharing"
     }
-    
-    resizeCanvas();
-    animate();
-    window.addEventListener('resize', resizeCanvas);
+];
 
-    // Dynamic Content
-    const skills = [
-        'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
-        'Scikit-Learn', 'Pytest', 'GTest', 'Flask', 'FastAPI', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
-        'MongDB',
-    ];
-    const knowledges = [
-        'Computer Vision', 'Machine Learning', 'Deep Learning', 'GANs & Diffusion Models', 'LLMs', 'Signal Processing', 'Yolo', 'Deep Reinforcement Learning', 'Software Development'
-    ]
+const knowledges = [
+    {
+        en: 'Computer Vision',
+        fr: 'Vision par Ordinateur'
+    },
+    {
+        en: 'Machine Learning',
+        fr: 'Apprentissage Automatique'
+    },
+    {
+        en: 'Deep Learning',
+        fr: 'Apprentissage Profond'
+    },
+    {
+        en: 'GANs & Diffusion Models',
+        fr: 'GANs & Modèles de Diffusion'
+    },
+    {
+        en: 'LLMs',
+        fr: 'Grand Modèles de Langage (LLMs)'
+    },
+    {
+        en: 'Signal Processing',
+        fr: 'Traitement du Signal'
+    },
+    {
+        en: 'Yolo',
+        fr: 'Yolo (You Only Look Once)'
+    },
+    {
+        en: 'Deep Reinforcement Learning',
+        fr: 'Apprentissage par Renforcement Profond'
+    },
+    {
+        en: 'Software Development',
+        fr: 'Développement Logiciel'
+    }
+];
 
-    const projects = [
-         {
-            id: 'object-detection',
-            title: 'Conference EUSIPCO 2025: Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
-            description: `
+const projects = [
+    {
+        id: 'object-detection',
+        title: {
+            en: 'Conference EUSIPCO 2025: Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
+            fr: 'Conférence EUSIPCO 2025 : Analyse de l’Impact de l’Adaptation à Faible Rang pour la Détection d’Objets en Apprentissage Peu Supervisé dans les Images Aériennes'
+        },
+        description: {
+            en: `
                 <ul>
                     <li>The research addresses the challenge of cross-domain object detection in few-shot learning. Experiments were conducted using the state-of-the-art object detection model DiffusionDet by applying Parameter-Efficient Fine-Tuning (PEFT), specifically Low-Rank Adaptation (LoRA), to enable cross-domain object detection from everyday images in the COCO dataset to aerial images in the DOTA and DIOR datasets.</li>
-                    <li>Personal Contribution: Analyzed the DOTA and DIOR datasets to provide insights into their characteristics and distribution. Explored foundation models including Vision Transformer (ViT), Detection Transformer (DETR), and DiffusionDet, and proposed specific modules/layers for the injection of trainable parameters using LoRA. Monitored gradients during backpropagation throughout the training process to ensure the model was learning properly, avoiding issues such as gradient explosion or vanishing.</li>
+                    <li>Personal Contribution: Analyzed the DOTA and DIOR datasets to provide insights into their characteristics and distribution. Explored foundation models including Vision Transformer (ViT), Detection Transformer (DETR), and DiffusionDet, and proposed  modules/layers for the injection of trainable parameters using LoRA. Monitored gradients during backpropagation throughout the training process to ensure the model was learning properly, avoiding issues such as gradient explosion or vanishing.</li>
                     <li>Link to paper: <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, Transformer, LoRA, Git'
+            fr: `
+                <ul>
+                    <li>Cette recherche traite du problème de la détection d’objets en apprentissage peu supervisé et inter-domaine. Des expériences ont été menées avec le modèle de pointe DiffusionDet, en utilisant l’optimisation efficace de paramètres (PEFT) via LoRA, pour permettre la détection entre les images du quotidien (COCO) et les images aériennes (DOTA, DIOR).</li>
+                    <li>Contribution personnelle : Analyse des jeux de données DOTA et DIOR pour en extraire des caractéristiques et distributions. Exploration de modèles fondamentaux tels que Vision Transformer (ViT), Detection Transformer (DETR) et DiffusionDet, et proposition de modules spécifiques pour l’injection de paramètres via LoRA. Suivi des gradients durant l'entraînement pour garantir l'apprentissage efficace.</li>
+                    <li>Lien vers l’article : <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
+                </ul>
+            `
         },
-        {
-            id: 'real-time detection',
-            title: 'Conference APIA 2025: Détection Automatique des Traînées Astronomiques avec YOLO – Une Approche Exploratoire pour la Connaissance du Domaine Spatial',
-            description: `
+        tech: 'Python, PyTorch, Transformer, LoRA, Git'
+    },
+    {
+        id: 'real-time detection',
+        title: {
+            en: 'Conference APIA 2025: Automatic Detection of Astronomical Streaks with YOLO – An Exploratory Approach for Space Domain Awareness',
+            fr: 'Conférence APIA 2025 : Détection Automatique des Traînées Astronomiques avec YOLO – Une Approche Exploratoire pour la Connaissance du Domaine Spatial'
+        },
+        description: {
+            en: `
                 <ul>
                     <li>A YOLOv8 model was fine-tuned from daily image data (COCO) to telescope images collected in the Luxembourg region to detect streaks from satellites and space debris. The model was optimized for varying lighting and noise conditions. It reached 0.90 mAP@50-95 and processed at 91 fps, supporting real-time deployment on edge devices. Further optimization can be applied to manage the trade-off between speed and accuracy.</li>
                     <li>Link to paper: <a href="https://pfia2025.u-bourgogne.fr/conferences/apia/Articles/D%C3%A9tection%20Automatique%20des%20Tra%C3%AEn%C3%A9es%20Astronomiques%20avec%20YOLO%20-%20Une%20Approche%20Exploratoire%20pour%20la%20Connaissance%20du%20Domaine%20Spatial.pdf">APIA 2025</a></li>
                 </ul>
             `,
-            tech: 'Python, OpenCV, Ultralytics (Yolo)'
-        },
-        {
-            id: 'hackathon',
-            title: 'Hackathon 1st place: Patient Activity Prediction from Bracelet Acceleration Signals',
-            description: `
+            fr: `
                 <ul>
-                    <li>
-                        The main objective of the hackathon was to predict patient activities based on data collected from two bracelets worn on each hand. The dataset contained Cartesian coordinates (x, y, z) for both hands, representing activities such as eating, sleeping, bathing, and changing clothes. The signal was highly noisy and included missing values. Various preprocessing techniques were explored to retain only meaningful semantic information for accurate prediction. Methods such as interpolation were applied to handle missing data. As a team of five, we experimented with a range of models—from traditional machine learning approaches to deep learning and transformer-based architectures.
-                    </li>
-                    <li>
-                        A key aspect of the project involved transforming the signal from the time domain to the frequency domain using the Fast Fourier Transform (FFT), followed by applying Linear Discriminant Analysis (LDA) to reduce the frequency-domain features to a 2D space. This enabled us to visualize class separation. While certain activities were clearly distinguishable, others overlapped significantly, suggesting that acceleration data alone (x, y, z) may not be sufficient to differentiate between similar types of activities.
-                    </li>
+                    <li>Un modèle YOLOv8 a été ajusté à partir des données COCO pour détecter les traînées de satellites et débris spatiaux dans des images de télescope prises au Luxembourg. Le modèle a été optimisé pour gérer des conditions de luminosité et de bruit variables. Il a atteint un mAP@50-95 de 0,90 à 91 fps, permettant un déploiement en temps réel sur des appareils embarqués.</li>
+                    <li>Lien vers l’article : <a href="https://pfia2025.u-bourgogne.fr/conferences/apia/Articles/D%C3%A9tection%20Automatique%20des%20Tra%C3%AEn%C3%A9es%20Astronomiques%20avec%20YOLO%20-%20Une%20Approche%20Exploratoire%20pour%20la%20Connaissance%20du%20Domaine%20Spatial.pdf">APIA 2025</a></li>
                 </ul>
-
-
-            `,
-            tech: 'Python, Pandas, Numpy, FFT, LDA, Transformer, LSTM'
+            `
         },
-        {
-            id: 'llm-rag-lora',
-            title: 'Comparing RAG and LoRA for Metaphor Comprehension: A Study on Mistral-7B with the LCC Dataset',
-            description: `
+        tech: 'Python, OpenCV, Ultralytics (Yolo)'
+    },
+    {
+        id: 'hackathon',
+        title: {
+            en: 'Hackathon 1st place: Patient Activity Prediction from Bracelet Acceleration Signals',
+            fr: 'Hackathon – 1ère place : Prédiction des Activités des Patients à partir de Signaux d’Accélération de Bracelets'
+        },
+        description: {
+            en: `
                 <ul>
-                    <li>
-                        LLMs—particularly smaller models like Mistral 7B—often struggle with metaphor comprehension due to limited contextual reasoning. 
-                        To address this, metaphor understanding was evaluated using the LCC Metaphor Dataset via two approaches: 
-                        <strong>LoRA fine-tuning</strong> and <strong>Retrieval-Augmented Generation (RAG) using ChromaDB</strong>. 
-                        The objective was to predict the target domain of a metaphor given the full metaphorical phrase. 
-                        Evaluation was based on prediction accuracy, allowing for minor variations in phrasing.
-                    </li>
-                    <li>
-                        <strong>RAG achieved 99.8% accuracy</strong>, significantly outperforming the LoRA-tuned model (38.1%) and the baseline (34.9%). 
-                        The results demonstrate that RAG is highly effective for structured, low-resource tasks, while LoRA offers a scalable and lightweight alternative.
-                    </li>
+                    <li>The main objective of the hackathon was to predict patient activities based on data collected from two bracelets worn on each hand. The dataset contained Cartesian coordinates (x, y, z) for both hands, representing activities such as eating, sleeping, bathing, and changing clothes. The signal was highly noisy and included missing values. Various preprocessing techniques were explored to retain only meaningful semantic information for accurate prediction. Methods such as interpolation were applied to handle missing data. As a team of five, we experimented with a range of models—from traditional machine learning approaches to deep learning and transformer-based architectures.</li>
+                    <li>A key aspect of the project involved transforming the signal from the time domain to the frequency domain using the Fast Fourier Transform (FFT), followed by applying Linear Discriminant Analysis (LDA) to reduce the frequency-domain features to a 2D space. This enabled us to visualize class separation. While certain activities were clearly distinguishable, others overlapped significantly, suggesting that acceleration data alone (x, y, z) may not be sufficient to differentiate between similar types of activities.</li>
                 </ul>
             `,
-            tech: 'Python, Pytorch, Transformer, Low-rank Adaptation (LoRA), Retrieval-Augmented Generation (RAG), ChromaDB'
+            fr: `
+                <ul>
+                    <li>L’objectif principal du hackathon était de prédire les activités des patients à partir de données provenant de deux bracelets portés aux deux poignets. Le jeu de données contenait des coordonnées cartésiennes (x, y, z) représentant des activités telles que manger, dormir, se laver ou se changer. Le signal était très bruité et comportait des valeurs manquantes. Différentes techniques de prétraitement ont été explorées pour conserver une information sémantique pertinente. Des méthodes telles que l’interpolation ont été utilisées pour gérer les données manquantes. En équipe de cinq, nous avons testé plusieurs modèles, allant des méthodes traditionnelles aux modèles profonds et transformeurs.</li>
+                    <li>Une partie clé du projet consistait à transformer le signal temporel en domaine fréquentiel avec la transformée de Fourier (FFT), puis à utiliser l’analyse discriminante linéaire (LDA) pour réduire les dimensions et visualiser la séparation des classes. Certaines activités étaient bien distinctes, d’autres fortement superposées, indiquant que les seules données d’accélération (x, y, z) peuvent être insuffisantes pour discriminer certaines actions proches.</li>
+                </ul>
+            `
         },
-        // {
-        //     id: 'ocr',
-        //     title: 'Handwritten Text Recognition with Fine-Tuned TrOCR',
-        //     description: `
-        //         <ul>
-        //             <li>This project fine-tunes the microsoft/trocr-large-handwritten model from Hugging Face for handwritten text recognition on a custom dataset. The goal is to adapt the model to recognize specific handwritten text styles or domains with improved accuracy.
-        //             </li>
-        //             <video controls style="width: 100%; height: auto; margin-top: 10px;">
-        //             Demo
-        //             <source src="https://github.com/user-attachments/assets/9c08b124-290e-45eb-88f7-775e8118e7c6">
-        //             </video>
-        //         </ul>
-        //     `,
-        //     tech: 'Python, PyTorch, Transformer, LoRA, Git'
-        // },
-        // {
-        //     id: 'object-classification',
-        //     title: 'Object classification',
-        //     description: `<ul>
-        //         <li>
-        //             Trained a MobileViT model on the SPOTS-10: Animal Pattern dataset to classify animals based on their body patterns and textures, and on the CIFAR-10 dataset to classify objects. Developed an API using FastAPI, deployed the model trained on CIFAR-10 with Docker on Google Cloud Platform, and created a user interface hosted on Streamlit Community Cloud.
-        //         </li>
-                
-        //             <video controls style="width: 100%; height: auto; margin-top: 10px;">
-        //             Demo
-        //             <source src="https://github.com/user-attachments/assets/ae1c0d9a-5c9c-4c3d-885f-fecacd865b87">
-        //             </video>
-        //     </ul>`,
-            
-            
-        //     tech: 'Python, PyTorch, Git, Google Cloud Platform, FastAPI, Docker, Streamlit'
-        // },
-        // {
-        //     id: 'asr',
-        //     title: 'Automatic Speech Recognition (ASR)',
-        //     description: `
-        //         <ul class="">
-        //             <li>Developed and fine-tuned the Whisper Automatic Speech Recognition (ASR) model using the PolyAI/minds14 dataset to enhance performance for speech-to-text applications.</li>
-        //         </ul>
-        //     `,
-        //     tech: 'Python, PyTorch, Deep Learning, Fine Tuning, Transformers'
-        // },
-        // {
-        //     id: 'handmotion-prediction',
-        //     title: 'HandMotion Prediction',
-        //     description: 'Developing a machine learning project to predict the acceleration of patients hands, providing one prediction per second for each hand from 7 AM to 7 PM. The dataset contains acceleration values (x, y, z) for both hands and corresponding timestamps, with 50 data points recorded per second. Responsibilities include synchronizing datasets for both hands by aligning timestamps, handling missing data through linear interpolation, and training a Long Short-Term Memory (LSTM) model to produce accurate, second-level predictions.',
-        //     tech: 'Python, Data Analysis, PyTorch, Time-series, Git'
-        // },
-        // {
-        //     id: 'e-commerce',
-        //     title: 'E-Commerce Web application',
-        //     description: `Developed a web application for sports shoe sales using a Vue.js frontend and a Laravel backend. The frontend, built with Vue.js, provided a dynamic and responsive user interface, enabling users to browse products, filter by size, brand, and category, and manage their shopping cart in real time. The backend, powered by Laravel, handled key functionalities such as user authentication, product management, inventory tracking, order processing, and payment integration. The system also included an admin dashboard for managing product listings, viewing sales analytics, and handling customer queries. The application aimed to deliver a seamless e-commerce experience optimized for both desktop and mobile users.`,
-        //     tech: 'Java script, PHP, Vue.js, Laravel, HTML, CSS, Tailwind, Git'
-        // },
-        {
-            id: 'ai-web-app',
-            title: 'Multimodal AI Web Application',
-            description: `
+        tech: 'Python, Pandas, Numpy, FFT, LDA, Transformer, LSTM'
+    },
+    {
+        id: 'llm-rag-lora',
+        title: {
+            en: 'Comparing RAG and LoRA for Metaphor Comprehension: A Study on Mistral-7B with the LCC Dataset',
+            fr: 'Comparaison entre RAG et LoRA pour la Compréhension des Métaphores : Étude sur Mistral-7B avec le Jeu de Données LCC'
+        },
+        description: {
+            en: `
+                <ul>
+                    <li>LLMs—particularly smaller models like Mistral 7B—often struggle with metaphor comprehension due to limited contextual reasoning. To address this, metaphor understanding was evaluated using the LCC Metaphor Dataset via two approaches: <strong>LoRA fine-tuning</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong> using ChromaDB.</li>
+                    <li>The objective was to predict the target domain of a metaphor given the full metaphorical phrase. Evaluation was based on prediction accuracy, allowing for minor variations in phrasing.</li>
+                    <li><strong>RAG achieved 99.8% accuracy</strong>, significantly outperforming the LoRA-tuned model (38.1%) and the baseline (34.9%). The results demonstrate that RAG is highly effective for structured, low-resource tasks, while LoRA offers a scalable and lightweight alternative.</li>
+                </ul>
+            `,
+            fr: `
+                <ul>
+                    <li>Les grands modèles de langage (LLMs), en particulier les petits comme Mistral 7B, ont souvent des difficultés à comprendre les métaphores en raison de capacités limitées en raisonnement contextuel. Pour y remédier, la compréhension métaphorique a été évaluée à l’aide du jeu de données LCC via deux approches : <strong>un ajustement fin avec LoRA</strong> et <strong>la génération augmentée par récupération (RAG)</strong> à l’aide de ChromaDB.</li>
+                    <li>L’objectif était de prédire le domaine cible d’une métaphore donnée en entrée complète. L’évaluation s’est basée sur l’exactitude des prédictions, en tolérant de légères variations de formulation.</li>
+                    <li><strong>RAG a atteint 99,8 % de précision</strong>, surpassant largement le modèle ajusté avec LoRA (38,1 %) et le modèle de base (34,9 %). Ces résultats montrent l’efficacité de RAG pour les tâches structurées à faibles ressources, tandis que LoRA reste une alternative légère et évolutive.</li>
+                </ul>
+            `
+        },
+        tech: 'Python, Pytorch, Transformer, Low-rank Adaptation (LoRA), Retrieval-Augmented Generation (RAG), ChromaDB'
+    },
+    {
+        id: 'ai-web-app',
+        title: {
+            en: 'Multimodal AI Web Application',
+            fr: 'Application Web d’IA Multimodale'
+        },
+        description: {
+            en: `
                 <ul>
                     <li>Developed a Flask-based web application integrating vision and language models.</li>
                     <li>Implemented image classification using a pretrained Vision Transformer (ViT) model from Hugging Face.</li>
@@ -318,24 +331,141 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li>Designed multiple endpoints for image upload, classification, and chat interaction with dynamic rendering in HTML.</li>
                 </ul>
             `,
-            tech: 'Python, Flask, OpenCV, PyTorch, Transformers, HTML, CSS, JavaScript'
-        },
-        {
-            id: 'robot-arm-rl',
-            title: 'Musculoskeletal Control of a Robot Arm using Reinforcement Learning',
-            description: `
+            fr: `
                 <ul>
-                <li>Designed a custom musculoskeletal environment simulating a two-joint arm with 11 muscles, incorporating biomechanical properties such as inertia, damping, and gravity. The task was modeled as a Markov Decision Process with a reward function promoting precision, smoothness, and energy efficiency.</li>
-                <li>Trained a reinforcement learning agent using the Soft Actor-Critic (SAC) algorithm to generate muscle activations that allow the arm to reach dynamic targets. The agent achieved stable convergence and generalization across target positions within 250,000 training steps.</li>
+                    <li>Développement d’une application web basée sur Flask intégrant des modèles de vision et de langage.</li>
+                    <li>Classification d’images via un modèle Vision Transformer (ViT) pré-entraîné de Hugging Face.</li>
+                    <li>Détection d’objets en temps réel avec YOLOv3 via OpenCV et une webcam.</li>
+                    <li>Création d’une interface chatbot utilisant un LLM léger pour des conversations naturelles.</li>
+                    <li>Historique de session et génération de réponse gérés via un module personnalisé de génération de texte.</li>
+                    <li>Plusieurs endpoints ont été conçus pour le téléversement d’images, leur classification, et l’interaction avec le chatbot (rendu dynamique HTML).</li>
+                </ul>
+            `
+        },
+        tech: 'Python, Flask, OpenCV, PyTorch, Transformers, HTML, CSS, JavaScript'
+    },
+    {
+        id: 'robot-arm-rl',
+        title: {
+            en: 'Musculoskeletal Control of a Robot Arm using Reinforcement Learning',
+            fr: 'Contrôle Musculosquelettique d’un Bras Robotique via l’Apprentissage par Renforcement'
+        },
+        description: {
+            en: `
+                <ul>
+                    <li>Designed a custom musculoskeletal environment simulating a two-joint arm with 11 muscles, incorporating biomechanical properties such as inertia, damping, and gravity. The task was modeled as a Markov Decision Process with a reward function promoting precision, smoothness, and energy efficiency.</li>
+                    <li>Trained a reinforcement learning agent using the Soft Actor-Critic (SAC) algorithm to generate muscle activations that allow the arm to reach dynamic targets. The agent achieved stable convergence and generalization across target positions within 250,000 training steps.</li>
                 </ul>
             `,
-            tech: 'Python, PyTorch, OpenAI Gym, Reinforcement Learning, Soft Actor-Critic (SAC), Biomechanics Simulation'
-            }
+            fr: `
+                <ul>
+                    <li>Conception d’un environnement musculosquelettique simulant un bras à deux articulations et 11 muscles, intégrant des propriétés biomécaniques comme l’inertie, l’amortissement et la gravité. La tâche est formulée comme un processus de décision de Markov avec une fonction de récompense favorisant la précision, la fluidité et l’efficacité énergétique.</li>
+                    <li>Entraînement d’un agent d’apprentissage par renforcement avec l’algorithme Soft Actor-Critic (SAC) pour générer des activations musculaires permettant au bras d’atteindre des cibles dynamiques. L’agent a atteint une convergence stable et une bonne généralisation en 250 000 étapes d’apprentissage.</li>
+                </ul>
+            `
+        },
+        tech: 'Python, PyTorch, OpenAI Gym, Reinforcement Learning, Soft Actor-Critic (SAC), Biomechanics Simulation'
+    }
+];
 
+const education = [
+    {
+        degree: {
+            en: "Engineering Degree (Equivalent M2) in Artificial Intelligence and Data Science",
+            fr: "Diplôme d'ingénieur en Intelligence Artificielle et Science des Données"
+        },
+        institution: {
+            en: "IMT Mines Ales",
+            fr: "IMT Mines Alès (Double diplôme d'ingénieur)"
+        },
+        dates: "2023 - 2025",
+        details: {
+            en: "",
+            fr: ""
+        }
+    },
+    {
+        degree: {
+            en: "Engineering Degree in Computer Science and Networks",
+            fr: "Diplôme d'ingénieur en Informatique et Réseaux"
+        },
+        institution: {
+            en: "Institute of Technology of Cambodia",
+            fr: "Institut de Technologie du Cambodge (Double diplôme d'ingénieur)"
+        },
+        dates: "2019 - 2023",
+        details: {
+            en: "",
+            fr: ""
+        }
+    }
+];
 
+const canvas = document.getElementById('techBg');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+class Particle {
+    constructor() {
+        this.reset();
+    }
+    
+    reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2;
+        this.speed = Math.random() * 0.5 + 0.1;
+        this.angle = Math.random() * Math.PI * 2;
+    }
+    
+    update() {
+        this.x += Math.cos(this.angle) * this.speed;
+        this.y += Math.sin(this.angle) * this.speed;
+        
+        if (this.x < 0 || this.x > canvas.width || 
+            this.y < 0 || this.y > canvas.height) {
+            this.reset();
+        }
+    }
+    
+    draw() {
+        ctx.fillStyle = 'rgba(35,134,54,0.3)';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+const particles = Array(100).fill().map(() => new Particle());
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+    requestAnimationFrame(animate);
+}
+
+resizeCanvas();
+animate();
+window.addEventListener('resize', resizeCanvas);
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Animated Background
+    
+
+    // Dynamic Content
+    const skills = [
+        'Python', 'C/C++', 'Java', 'R', 'PyTorch', 'TensorFlow',  'OpenCV', 'Ultralytics (Yolo)', 'Numpy', 'Pandas', 'Matplotlib',
+        'Scikit-Learn', 'Pytest', 'GTest', 'Flask', 'FastAPI', 'Git', 'Github Actions', 'SonarQube', 'Docker', 'Linux', 'Elastic Search','MySQL',
+        'MongDB',
     ];
 
-    
 
     // Populate Skills
     const skillsGrid = document.querySelector('.skills-grid');
@@ -344,15 +474,6 @@ document.addEventListener('DOMContentLoaded', () => {
         div.className = 'skill-card';
         div.textContent = skill;
         skillsGrid.appendChild(div);
-    });
-
-    // Populate knowledges
-    const knowledgesGrid = document.querySelector('.knowledges-grid');
-    knowledges.forEach(knowledge => {
-        const div = document.createElement('div');
-        div.className = 'knowledges-card';
-        div.textContent = knowledge;
-        knowledgesGrid.appendChild(div);
     });
 
     // Populate Projects
@@ -402,20 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // script.js
 // Add education data
-const education = [
-    {
-        degree: "MSc in Artificial Intelligence and Data Science",
-        institution: "IMT Mines Ales",
-        dates: "2023 - 2025",
-        details: ""
-    },
-    {
-        degree: "BSc in Computer Science and Networks",
-        institution: "Institute of Technology of Cambodia",
-        dates: "2019 - 2023",
-        details: ""
-    }
-];
+
 
 // Populate Education
 const educationTimeline = document.querySelector('.education-timeline');
@@ -431,6 +539,93 @@ education.forEach(edu => {
     educationTimeline.appendChild(div);
 });
 
+
+
+
+function populateCertifications(lang = 'fr') {
+    const certsGrid = document.querySelector('.certifications-grid');
+    if (!certsGrid) return;
+
+    certsGrid.innerHTML = ''; // Clear old entries
+
+    certifications.forEach(cert => {
+        const div = document.createElement('div');
+        div.className = 'certification-card';
+        div.innerHTML = `
+            <h3><a href="${cert.link}" target="_blank">${cert.title[lang]}</a></h3>
+            <p>${cert.issuer[lang]}</p>
+            <div class="cert-date">${cert.date}</div>
+        `;
+        certsGrid.appendChild(div);
+    });
+    console.log('Rendering certifications in language:', lang);
+
+}
+
+function populateExperiences(lang = 'fr') {
+    const experienceTimeline = document.querySelector('.experience-timeline');
+    experienceTimeline.innerHTML = ''; // Clear existing content
+
+    experiences.forEach(exp => {
+        const div = document.createElement('div');
+        div.className = 'experience-item';
+        div.innerHTML = `
+            <h3>${exp.title[lang]}</h3>
+            <div class="experience-company">${exp.company[lang]}</div>
+            <div class="experience-dates">${exp.dates}</div>
+            <div class="experience-description">${exp.description[lang]}</div>
+        `;
+        experienceTimeline.appendChild(div);
+    });
+}
+
+function populateKnowledges(lang = 'fr') {
+    const knowledgesGrid = document.querySelector('.knowledges-grid');
+    knowledgesGrid.innerHTML = '';
+
+    knowledges.forEach(knowledge => {
+        const div = document.createElement('div');
+        div.className = 'knowledges-card';
+        div.textContent = knowledge[lang];
+        knowledgesGrid.appendChild(div);
+    });
+}
+
+function populateProjects(lang = 'fr') {
+    const projectsGrid = document.querySelector('.projects-grid');
+    projectsGrid.innerHTML = ''; // Clear existing content
+
+    projects.forEach(project => {
+        const div = document.createElement('div');
+        div.className = 'project-card';
+        div.id = project.id;
+        div.innerHTML = `
+            <h3>${project.title[lang]}</h3>
+            <div class="project-description">${project.description[lang]}</div>
+            <div class="tech">${project.tech}</div>
+        `;
+        projectsGrid.appendChild(div);
+    });
+}
+
+function populateEducation(lang = 'en') {
+    const educationTimeline = document.querySelector('.education-timeline');
+    educationTimeline.innerHTML = ''; // Clear existing content
+
+    education.forEach(edu => {
+        const div = document.createElement('div');
+        div.className = 'education-item';
+        div.innerHTML = `
+            <h3>${edu.degree[lang]}</h3>
+            <div class="education-institution">${edu.institution[lang]}</div>
+            <div class="education-dates">${edu.dates}</div>
+            <p class="education-details">${edu.details[lang]}</p>
+        `;
+        educationTimeline.appendChild(div);
+    });
+}
+
+
 function setLanguage(lang) {
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
 
@@ -439,12 +634,18 @@ function setLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active-lang'));
     const activeBtn = document.getElementById(`lang-${lang}`);
     if (activeBtn) activeBtn.classList.add('active-lang');
-
+    
     localStorage.setItem('preferredLanguage', lang);
+    populateCertifications(lang);
+    populateExperiences(lang); 
+    populateKnowledges(lang);
+    populateProjects(lang);
+    populateEducation(lang);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
     setLanguage(savedLang);
 });
+
 
