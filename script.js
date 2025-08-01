@@ -16,7 +16,7 @@ const experiences = [
                     <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
                     <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
                     <li>Co-developing a Multicam Annotation Tool, a semi-automated tool that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
-                    <li>Recommendation letter available upon request.</li>
+                    <li>Recommendation letter available.</li>
                     <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
                 </ul>
             `,
@@ -26,7 +26,7 @@ const experiences = [
                     <li>Amélioration du système de suivi multi-cibles multi-caméras (MTMC) en optimisant le composant de ré-identification (ReID) ; conception et validation d'une approche innovante pour améliorer les performances du modèle ReID.</li>
                     <li>Intégration du concept de validation dans VISuite d'Ipsotek, une plateforme de pointe en analyse vidéo.</li>
                     <li>Co-développement d’un outil d’annotation multicaméras, un outil semi-automatisé permettant de corriger manuellement les prédictions du modèle ReID sur plusieurs vues caméra, facilitant la création de jeux de données propres pour l'entraînement, les tests et l'évaluation.</li>
-                    <li>Lettre de recommandation disponible sur demande.</li>
+                    <li>Lettre de recommandation disponible.</li>
                     <li>Technologies : Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
                 </ul>
             `
@@ -49,7 +49,7 @@ const experiences = [
                     <li>Analyzed machine performance and production bottlenecks; developed AI-driven approaches to address an NP-hard optimization problem aimed at minimizing production time.</li>
                     <li>Reduced weekly production cycles times by 40% (from 107–140 hours to 65–90 hours)—while maintaining the same level of output.</li>
                     <li>Designed and implemented a user interface to enable interaction with the optimization tool.</li>
-                    <li>An academic score of 19.25/20 for the internship. Recommendation letter available upon request.</li>
+                    <li>An academic score of 19.25/20 for the internship. Recommendation letter available.</li>
                     <li>Technologies: Python, Heuristic Optimization, Flask, Pandas, Numpy</li>
                 </ul>
             `,
@@ -59,7 +59,7 @@ const experiences = [
                     <li>Analyse des performances des machines et des goulets d'étranglement de la production ; développement d'approches basées sur l'IA pour résoudre un problème d’optimisation NP-difficile visant à minimiser le temps de production.</li>
                     <li>Réduction des cycles de production hebdomadaires de 40 % (de 107–140 heures à 65–90 heures), tout en conservant le même niveau de production.</li>
                     <li>Conception et implémentation d'une interface utilisateur pour interagir avec l'outil d'optimisation.</li>
-                    <li>Note académique : 19.25/20. Lettre de recommandation disponible sur demande.</li>
+                    <li>Note académique : 19.25/20. Lettre de recommandation disponible.</li>
                     <li>Technologies : Python, Optimisation Heuristique, Flask, Pandas, Numpy</li>
                 </ul>
             `
