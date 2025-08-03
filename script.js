@@ -14,7 +14,7 @@ const experiences = [
                 <ul class="experience-list">
                     <li>Contributing to the Innovation Team within the Computer Vision Lab, focused on developing client-oriented applications powered by vision models.</li>
                     <li>Enhancing the Multi-Target Multi-Camera Tracking (MTMC) system by improving the Re-Identification (ReID) component; designed and validated a novel approach to boost ReID model performance.</li>
-                    <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a leading video analytics platform.</li>
+                    <li>Integrating the proof-of-concept into Ipsotek’s VISuite, a video analytics platform.</li>
                     <li>Co-developing a Multicam Annotation Tool, a semi-automated tool that allows users to manually correct ReID model predictions across multiple camera views, facilitating the creation of clean datasets for training, testing, and evaluating models and algorithms.</li>
                     <li>Recommendation letter available.</li>
                     <li>Technologies: Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
@@ -22,9 +22,9 @@ const experiences = [
             `,
             fr: `
                 <ul class="experience-list">
-                    <li>Contribution à l'équipe Innovation du laboratoire de vision par ordinateur, axée sur le développement d'applications orientées client basées sur des modèles de vision.</li>
-                    <li>Amélioration du système de suivi multi-cibles multi-caméras (MTMC) en optimisant le composant de ré-identification (ReID) ; conception et validation d'une approche innovante pour améliorer les performances du modèle ReID.</li>
-                    <li>Intégration du concept de validation dans VISuite d'Ipsotek, une plateforme de pointe en analyse vidéo.</li>
+                    <li>Contribution à l'équipe Innovation du CVLab, axée sur le développement d'applications orientées client basées sur des modèles de vision.</li>
+                    <li>Amélioration du système de suivi multi-cibles multi-caméras (MTMC) d'Ipsotek. Formulation et mise en œuvre d’un proof-of-concept (POC) ayant permis d’améliorer les performances du composant ReID.</li>
+                    <li>Intégration du POC dans VISuite d'Ipsotek, une plateforme d'analyse vidéo.</li>
                     <li>Co-développement d’un outil d’annotation multicaméras, un outil semi-automatisé permettant de corriger manuellement les prédictions du modèle ReID sur plusieurs vues caméra, facilitant la création de jeux de données propres pour l'entraînement, les tests et l'évaluation.</li>
                     <li>Lettre de recommandation disponible.</li>
                     <li>Technologies : Python, Pytest, C++, GTest, Git, SonarQube, Github Action</li>
@@ -56,7 +56,7 @@ const experiences = [
             fr: `
                 <ul class="experience-list">
                     <li>Chaire de recherche "Jumeau numérique pour les systèmes de production industrielle".</li>
-                    <li>Analyse des performances des machines et des goulets d'étranglement de la production ; développement d'approches basées sur l'IA pour résoudre un problème d’optimisation NP-difficile visant à minimiser le temps de production.</li>
+                    <li>Analyse des performances des machines et des goulets d'étranglement de la production ; développement d'approches basées sur l'IA pour résoudre un problème d’optimisation NP-hard visant à minimiser le temps de production.</li>
                     <li>Réduction des cycles de production hebdomadaires de 40 % (de 107–140 heures à 65–90 heures), tout en conservant le même niveau de production.</li>
                     <li>Conception et implémentation d'une interface utilisateur pour interagir avec l'outil d'optimisation.</li>
                     <li>Note académique : 19.25/20. Lettre de recommandation disponible.</li>
@@ -226,7 +226,7 @@ const projects = [
         id: 'object-detection',
         title: {
             en: 'Conference EUSIPCO 2025: Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images',
-            fr: 'Conférence EUSIPCO 2025 : Analyse de l’Impact de l’Adaptation à Faible Rang pour la Détection d’Objets en Apprentissage Peu Supervisé dans les Images Aériennes'
+            fr: 'Conférence EUSIPCO 2025: Analyzing the Impact of Low-Rank Adaptation for Cross-Domain Few-Shot Object Detection in Aerial Images'
         },
         description: {
             en: `
@@ -238,7 +238,7 @@ const projects = [
             `,
             fr: `
                 <ul>
-                    <li>Cette recherche traite du problème de la détection d’objets en apprentissage peu supervisé et inter-domaine. Des expériences ont été menées avec le modèle de pointe DiffusionDet, en utilisant l’optimisation efficace de paramètres (PEFT) via LoRA, pour permettre la détection entre les images du quotidien (COCO) et les images aériennes (DOTA, DIOR).</li>
+                    <li>Cette recherche relève le défi de la détection d’objets inter-domaines en few-shot learning. Des expériences ont été menées avec DiffusionDet, modèle de détection d’objets à l’état de l’art, en appliquant le Parameter-Efficient Fine-Tuning (PEFT) — notamment l’adaptation à faible rang (LoRA) — afin de transférer la détection d’objets des images du quotidien du jeu de données COCO vers des images aériennes des jeux de données DOTA et DIOR.</li>
                     <li>Contribution personnelle : Analyse des jeux de données DOTA et DIOR pour en extraire des caractéristiques et distributions. Exploration de modèles fondamentaux tels que Vision Transformer (ViT), Detection Transformer (DETR) et DiffusionDet, et proposition de modules spécifiques pour l’injection de paramètres via LoRA. Suivi des gradients durant l'entraînement pour garantir l'apprentissage efficace.</li>
                     <li>Lien vers l’article : <a href="https://arxiv.org/abs/2504.06330">https://arxiv.org/abs/2504.06330</a></li>
                 </ul>
@@ -261,7 +261,7 @@ const projects = [
             `,
             fr: `
                 <ul>
-                    <li>Un modèle YOLOv8 a été ajusté à partir des données COCO pour détecter les traînées de satellites et débris spatiaux dans des images de télescope prises au Luxembourg. Le modèle a été optimisé pour gérer des conditions de luminosité et de bruit variables. Il a atteint un mAP@50-95 de 0,90 à 91 fps, permettant un déploiement en temps réel sur des appareils embarqués.</li>
+                    <li>Un modèle YOLOv8 a été fine-tuné des images génériques du jeu COCO vers des images de télescope collectées au Luxembourg afin de détecter les traînées de satellites et les débris spatiaux. Optimisé pour des conditions variables de luminosité et de bruit, il atteint 0,90 mAP@50-95 et 91 fps, ce qui autorise un déploiement en temps réel sur des appareils embarqués ; des optimisations supplémentaires peuvent encore affiner le compromis vitesse/précision.</li>
                     <li>Lien vers l’article : <a href="https://pfia2025.u-bourgogne.fr/conferences/apia/Articles/D%C3%A9tection%20Automatique%20des%20Tra%C3%AEn%C3%A9es%20Astronomiques%20avec%20YOLO%20-%20Une%20Approche%20Exploratoire%20pour%20la%20Connaissance%20du%20Domaine%20Spatial.pdf">APIA 2025</a></li>
                 </ul>
             `
@@ -306,10 +306,11 @@ const projects = [
             `,
             fr: `
                 <ul>
-                    <li>Les grands modèles de langage (LLMs), en particulier les petits comme Mistral 7B, ont souvent des difficultés à comprendre les métaphores en raison de capacités limitées en raisonnement contextuel. Pour y remédier, la compréhension métaphorique a été évaluée à l’aide du jeu de données LCC via deux approches : <strong>un ajustement fin avec LoRA</strong> et <strong>la génération augmentée par récupération (RAG)</strong> à l’aide de ChromaDB.</li>
-                    <li>L’objectif était de prédire le domaine cible d’une métaphore donnée en entrée complète. L’évaluation s’est basée sur l’exactitude des prédictions, en tolérant de légères variations de formulation.</li>
-                    <li><strong>RAG a atteint 99,8 % de précision</strong>, surpassant largement le modèle ajusté avec LoRA (38,1 %) et le modèle de base (34,9 %). Ces résultats montrent l’efficacité de RAG pour les tâches structurées à faibles ressources, tandis que LoRA reste une alternative légère et évolutive.</li>
+                    <li>Les grands modèles de langage (LLMs) — en particulier les versions compactes comme Mistral 7B — rencontrent souvent des difficultés à saisir les métaphores, faute de raisonnement contextuel suffisant. Pour tester cette capacité, la compréhension métaphorique a été évaluée sur le LCC Metaphor Dataset selon deux approches : <strong>un fine-tuning LoRA</strong> et une <strong>génération augmentée par récupération (RAG)</strong> à l’aide de ChromaDB.</li>
+                    <li>L’objectif consistait à prédire le domaine cible d’une métaphore à partir de l’expression métaphorique complète. L’évaluation portait sur la précision des prédictions, en tolérant de légères variations de formulation.</li>
+                    <li><strong>La méthode RAG a obtenu 99,8 % de précision</strong>, dépassant largement le modèle affiné par LoRA (38,1 %) ainsi que la ligne de base (34,9 %). Ces résultats démontrent que la RAG est extrêmement efficace pour les tâches structurées à faibles ressources, tandis que LoRA demeure une alternative légère et facilement extensible.</li>
                 </ul>
+
             `
         },
         tech: 'Python, Pytorch, Transformer, Low-rank Adaptation (LoRA), Retrieval-Augmented Generation (RAG), ChromaDB'
